@@ -2,6 +2,15 @@
 
 <h2 id="file-structure">File Structure</h2>
 
+### Installation
+
+1. `$ git clone [repo]`
+2. `$ npm install`
+3. `$ npm run dev`
+4. Preview in browser `http://localhost:8081/`
+
+<hr>
+
 <p>Base structure you’ll find the following directories and files:</p>
 
 <pre class="highlight">
