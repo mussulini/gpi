@@ -1,7 +1,5 @@
 # GPI Showroom
 
-<h2 id="file-structure">File Structure</h2>
-
 ### Installation
 
 1. `$ git clone [repo]`
@@ -11,7 +9,9 @@
 
 <hr>
 
-<p>Base structure you’ll find the following directories and files:</p>
+### File Structure
+
+<p>Base structure, you’ll find the following directories and files:</p>
 
 <pre class="highlight">
 <code>|-- GPIShowroom/
@@ -23,11 +23,10 @@
     |   |   |-- style.scss
     |   |   |-- bootstrap
     |   |   |-- custom
-    |   |-- vendor
+    |   |-- fonts
     |       |-- font-awesome
     |       |   |-- css
     |       |   |   |-- font-awesome.css
-    |       |   |   |-- font-awesome.min.css
     |       |   |-- fonts
     |       |       |-- FontAwesome.otf
     |       |       |-- fontawesome-webfont.eot
@@ -35,16 +34,6 @@
     |       |       |-- fontawesome-webfont.ttf
     |       |       |-- fontawesome-webfont.woff
     |       |       |-- fontawesome-webfont.woff2
-    |       |-- nucleo
-    |           |-- css
-    |           |   |-- nucleo-svg.css
-    |           |   |-- nucleo.css
-    |           |-- fonts
-    |               |-- nucleo-icons.eot
-    |               |-- nucleo-icons.svg
-    |               |-- nucleo-icons.ttf
-    |               |-- nucleo-icons.woff
-    |               |-- nucleo-icons.woff2
     |-- components
     |   |-- Badge.vue
     |   |-- BaseButton.vue
