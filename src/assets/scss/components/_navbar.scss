@@ -1,0 +1,13 @@
+.navbar {
+
+    @include media-breakpoint-up(lg) {
+
+        .dropdown-menu-right {
+            &:before {
+                right: 20px;
+                left: auto;
+            }
+        }
+    }
+    
+}

@@ -3,6 +3,7 @@ import Router from "vue-router";
 import Header from "./layout/starter/StarterHeader";
 import Footer from "./layout/starter/StarterFooter";
 import Home from "./views/Home.vue";
+import Cms from "./views/Cms.vue";
 import Components from "./views/Components.vue";
 
 Vue.use(Router);
@@ -16,6 +17,15 @@ export default new Router({
       components: {
         header: Header,
         default: Home,
+        footer: Footer
+      }
+    },
+    {
+      path: "/cms",
+      name: "cms",
+      components: {
+        header: Header,
+        default: Cms,
         footer: Footer
       }
     },

@@ -1,13 +1,13 @@
 <template>
     <nav class="navbar"
-         :class="[
+        :class="[
             {'navbar-expand-lg': expand},
             {[`navbar-${effect}`]: effect},
             {'navbar-transparent': transparent},
             {[`bg-${type}`]: type},
             {'rounded': round}
-         ]">
-        <div class="container">
+        ]">
+        <div class="container-fluid">
             <slot name="container-pre"></slot>
             <slot name="brand">
                 <a class="navbar-brand" href="#" @click.prevent="onTitleClick">
@@ -30,6 +30,7 @@
         </div>
     </nav>
 </template>
+
 <script>
 import { FadeTransition } from "vue2-transitions";
 import NavbarToggleButton from "./NavbarToggleButton";
@@ -93,5 +94,3 @@ export default {
   }
 };
 </script>
-<style>
-</style>

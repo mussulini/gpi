@@ -1,9 +1,9 @@
 <template>
 
-    <header class="header-global">
+    <headroom class="header-global">
 
-        <base-nav class="navbar-main" transparent type="" effect="light" expand>
-            <a slot="brand" class="navbar-brand mr-lg-5" href="">
+        <base-nav class="navbar-main" type effect="light" expand>
+            <a slot="brand" class="navbar-brand" href="">
                 <img src="img/brand/logo.png">
             </a>
 
@@ -18,7 +18,7 @@
                 </div>
             </div>
 
-            <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+            <ul class="navbar-nav align-items-lg-center ml-lg-auto navbar-nav-hover">
                 <li class="nav-item">
                     <router-link to="/" class="nav-link">Home</router-link>
                 </li>
@@ -46,7 +46,7 @@
             </ul>
         </base-nav>
 
-    </header>
+    </headroom>
 
 </template>
 
@@ -54,12 +54,14 @@
 import BaseNav from "@/components/BaseNav";
 import BaseDropdown from "@/components/BaseDropdown";
 import CloseButton from "@/components/CloseButton";
+import {headroom} from 'vue-headroom'
 
 export default {
     components: {
         BaseNav,
         CloseButton,
-        BaseDropdown
+        BaseDropdown,
+        headroom
     }
 };
 </script>

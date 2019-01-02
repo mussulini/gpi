@@ -1,8 +1,12 @@
 <template>
 
-    <footer class="footer footer-global">
+    <footer id="footer" class="footer-global">
 
         <div class="container text-center">
+
+            <p class="footer-logo">
+                <img src="/favicon.png">
+            </p>
 
             <ul class="nav nav-footer justify-content-center">
                 <li class="nav-item">

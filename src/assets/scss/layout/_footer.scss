@@ -1,0 +1,42 @@
+#footer {
+    margin-top: $spacer * 4.375;
+    padding: ($spacer * 4.375) 0 2rem;
+    color: $footer-color;
+    background: $footer-bg;
+    font-size: $footer-font-size;
+    position: relative;
+
+    &:after {
+        content: '';
+        display: block;
+        width: 120%; height: $spacer * 8.75; // 140px
+        position: absolute;
+        top: -50px; left: -10%;
+        background-color: $body-bg;
+        clip-path: ellipse(50% 50% at 50% 50%);
+    }
+
+    a { color: $footer-link-color;
+        @include hover-focus {color:$footer-link-hover-color}
+    }
+
+    .nav-item + .nav-item {
+        border-left: $border-width solid $border-color;
+    }
+    .nav-link {line-height: 1}
+
+    .nav-footer {margin-bottom: $spacer}
+
+    .footer-logo {
+        position: relative;
+        z-index: 2;
+
+        img {
+            padding: 2px;
+            border-radius: 50%;
+            background-color: $footer-bg;
+        }
+    }
+
+    .copyright {}
+}

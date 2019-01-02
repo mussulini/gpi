@@ -107,7 +107,6 @@ $brand-colors: map-merge((
   "github"      : $github
 ), $brand-colors);
 
-
 // Set a specific jump point for requesting color jumps
 $theme-color-interval: 8%;
 
@@ -352,8 +351,9 @@ $form-feedback-invalid-color     : $warning;
 // Dropdown
 $dropdown-border-width      : 0;
 $dropdown-border-radius     : $border-radius-lg;
-$dropdown-box-shadow        : 0 50px 100px rgba(50, 50, 93, .1), 0 15px 35px rgba(50, 50, 93, .15), 0 5px 15px rgba(0, 0, 0, .1);
-
+$dropdown-box-shadow        : 0 50px 100px rgba(50, 50, 93, .1), 
+                              0 15px 35px rgba(50, 50, 93, .15), 
+                              0 5px 15px rgba(0, 0, 0, .1);
 
 // Navs
 $nav-link-padding-y         : .25rem;
@@ -370,7 +370,6 @@ $nav-pills-border-color     : $primary;
 
 $nav-pills-link-color       : $primary;
 $nav-pills-link-hover-color : darken($primary, 5%);
-$nav-pills-link-active-color: color-yiq($primary);
 $nav-pills-link-active-bg   : $primary;
 $nav-pills-box-shadow       : $btn-box-shadow;
 
@@ -381,12 +380,12 @@ $navbar-transition          : .15s linear;
 $navbar-nav-link-padding-x     : 1rem;
 $navbar-nav-link-padding-y     : 1rem;
 
-$navbar-nav-link-font-family   : $font-family-base;
 $navbar-nav-link-font-size     : .9rem;
+$navbar-nav-link-font-family   : inherit;
 $navbar-nav-link-font-weight   : 400;
-$navbar-nav-link-text-transform: normal;
+$navbar-nav-link-text-transform: none;
 $navbar-nav-link-letter-spacing: 0;
-$navbar-nav-link-border-radius : $border-radius;
+$navbar-nav-link-border-radius : 0 0 $border-radius $border-radius;
 
 $navbar-dark-bg                  : transparent;
 $navbar-dark-hover-bg            : rgba($white, .1);
@@ -462,31 +461,31 @@ $badge-circle-size        : 2rem;
 
 
 // Pagination
-$pagination-color            : $gray-600;
+$pagination-color         : $gray-600;
 
-$pagination-hover-color      : $gray-600;
-$pagination-hover-bg         : $gray-300;
+$pagination-hover-color   : $gray-600;
+$pagination-hover-bg      : $gray-300;
 
 $pagination-active-box-shadow: $btn-hover-box-shadow;
 
 
 // Cards
-$card-spacer-y:                     1.25rem;
-$card-spacer-x:                     1.5rem;
-$card-border-color:                 rgba($black, .05);
-$card-cap-bg:                       $gray-100;
+$card-spacer-y            : 1.25rem;
+$card-spacer-x            : 1.5rem;
+$card-border-color        : rgba($black, .05);
+$card-cap-bg              : $gray-100;
 
 
 // Modals
 $modal-inner-padding           : 1.5rem;
 
 $modal-title-line-height       : 1.1;
+$modal-header-padding          : 1.25rem;
 
 $modal-content-box-shadow-xs   : 0 15px 35px rgba(50,50,93,.2), 0 5px 15px rgba(0,0,0,.17);
 $modal-content-box-shadow-sm-up: 0 15px 35px rgba(50,50,93,.2), 0 5px 15px rgba(0,0,0,.17);
 
 $modal-backdrop-opacity        : .16;
-$modal-header-padding          : 1.25rem;
 
 $modal-sm                      : 380px;
 
@@ -547,12 +546,19 @@ $datepicker-highlighted-bg                : $datepicker-active-background;
 // CUSTOM COMPONENTS
 // ----------------------------------------------
 
+// Header
+$header-fix-height        : 100px;
+$header-fix-bg            : $default;
+
+$header-brand-height      : $font-size-base * 2.5;
+$header-brand-height-fix  : $font-size-base * 2;
 
 // Footer
-$footer-link-font-size    : .85rem;
-$footer-bg                : $secondary;
-$footer-color             : $gray-600;
+$footer-font-size         : $font-size-sm;
+$footer-bg                : $white;
+$footer-color             : $gray-500;
 $footer-link-color        : $gray-600;
 $footer-link-hover-color  : $gray-700;
+// --
 $footer-heading-color     : $gray-600;
 $footer-heading-font-size : $font-size-sm;
