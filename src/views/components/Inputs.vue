@@ -31,7 +31,7 @@
                 </div>
             </div>
         </div>
-        <div class="py-5 bg-secondary">
+        <div class="py-5 bg-white">
             <div class="container">
                 <!-- Inputs (alternative) -->
                 <div class="mb-3">

@@ -1,217 +1,60 @@
-.header-global .navbar {
 
-    .navbar-brand {
-        img {height:$header-brand-height}
-    }
+// VENDOR (HEADROOM)
 
-    .nav-link {
-        font-size: $navbar-nav-link-font-size;
-        font-weight: $navbar-nav-link-font-weight;
-        font-family: $navbar-nav-link-font-family;
-        border-radius: $navbar-nav-link-border-radius;
-        text-transform: $navbar-nav-link-text-transform;
-        letter-spacing: $navbar-nav-link-letter-spacing;
-        @if $enable-transitions {
-            transition: $navbar-transition;
-        }
-    }
+// - HELPER Class:
+// .headroom.headroom--top.headroom--not-bottom.headroom--pinned     (default)
+// .headroom.headroom--not-top.headroom--bottom.headroom--unpinned   (scrolled-down hidden)
+// .headroom.headroom--not-top.headroom--not-bottom.headroom--pinned (scrolled-up show)
 
-    .nav-item .btn {
-        border-radius: 2rem;
-    }
+.headroom {
+    will-change: transform;
+    transition: $transition-base;
+    background-color: inherit;
+}
 
-    .navbar-toggler {outline:0}
+.headroom--not-top {
+    background-color: rgba($header-fix-bg, 0.98);
+    box-shadow: 0 1px 10px rgba(130, 130, 134, 0.1);
+}
+
+.headroom--pinned {
+    @extend .position-fixed;
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    @extend .position-fixed;
+    transform: translateY(-100%);
+}
+
+
+//
+// Header
+// ----------------------------------------------
+
+.header-global {
+
     .navbar-toggler-icon {
         background-image: $navbar-dark-toggler-icon-bg;
     }
-
-    // DESKTOP VIEW
-    @include media-breakpoint-up(lg) {
-        padding-top: 0;
-        padding-bottom: 0;
-
-        .nav-link {
-            color: $navbar-dark-color;
-            padding-top: $navbar-nav-link-padding-y;
-            padding-bottom: $navbar-nav-link-padding-y;
-
-            @include hover-focus {
-                color: $navbar-dark-hover-color;
-            }
-            &.disabled {
-                color: $navbar-dark-disabled-color;
-            }
-        }
-
-        // .show > .nav-link,
-        // .nav-link.show,
-        .active > .nav-link,
-        .nav-link.active {
-            color: rgba($navbar-dark-active-color, 1);
-            background-color: rgba($white, 0.1);
-        }
-
-        .dropdown-menu {min-width:6rem}
-
-        // Dropdown menu 
-        .dropdown-menu {
-            pointer-events: none;
-            opacity: 0; margin: 0;
-
-            &:before { content: '';
-                background: $dropdown-bg;
-                box-shadow: none;
-                display: block;
-                width: 1rem; height: 1rem;
-                position: absolute;
-                left: 20px; bottom: 100%;
-                transform: rotate(-45deg) translateY(1rem);
-                border-radius: $border-radius-sm;
-                z-index: -5;
-            }
-        }
-
-        &:not(.navbar-nav-hover) {
-            .dropdown-menu {
-                &.show { opacity: 1;
-                    pointer-events: auto;
-                    animation: show-navbar-dropdown .25s ease forwards;
-                }
-
-                &.close {display: block;
-                    animation: hide-navbar-dropdown .15s ease backwards;
-                }
-            }
-        }
-
-        // Dropdown menu (on:HOVER)
-        .navbar-nav-hover {
-            .dropdown-menu {
-                opacity: 0; 
-                display: block;
-                pointer-events: none;
-                transform: translate(0, 10px) perspective(200px) rotateX(-2deg);
-                transition: visibility 0.25s, opacity 0.25s, transform 0.25s;
-            }
-
-            .nav-item.dropdown:hover > .dropdown-menu {
-                opacity: 1;
-                display: block;
-                pointer-events: auto;
-                visibility: visible;
-                transform: translate(0, 0);
-                animation: none;
-            }
-        }
-    }
-
-    // Collapse (hide logo)
-    .navbar-collapse-header {
-        display: none;
-    }
-
-    // TABLET VIEW (MOBILE)
-    @include media-breakpoint-down(md) {
-        .nav-link {
-            padding: .625rem 0;
-            color: theme-color("default") !important;
-        }
-
-        .dropdown-menu {
-            box-shadow: none;
-            min-width: auto;
-        }
     
-        .navbar-collapse {     
-            overflow-y: auto;
+    // DESKTOP VIEW
+    @include media-breakpoint-up(lg) { 
+        .img-flag {left: 25px;
             position: absolute;
-            top: 0; left: 0; right: 0;
-            z-index: 1050; margin: .7rem;
-            width: calc(100% - 1.4rem);
-            height: auto !important;
-            opacity: 0;
-
-            .navbar-collapse-header {
-                display: block;
-                padding-bottom: 1rem;
-                margin-bottom: 1rem;
-                border-bottom: 1px solid rgba(0, 0, 0, .1);
-            }
-            .collapse-brand img {height:30px}
-            .collapse-close {text-align:right}
-
-            // CLOSE NAVBAR ICON
-            .navbar-toggler {
-                padding: 0;
-                position: relative;
-                display: inline-block;
-                width: 20px; height: 20px;
-
-                span {opacity: 1;
-                    display: block;
-                    position: absolute;
-                    width: 100%; height: 2px;
-                    border-radius: 2px;
-                    background-color: theme-color("default");
-                }
-                :nth-child(1) {transform:rotate(135deg)}
-                :nth-child(2) {transform:rotate(-135deg)}
+        }
+        .language {
+            .nav-link {padding-left: 50px}
+            .img-flag {margin-top: -2px;}
+            .dropdown-item {padding-left: 40px;
+                .img-flag {left: 15px; margin: 0}
             }
         }
-
-        // SHOW-HIDE NAVBAR
-        .navbar-collapse {
-            &.collapsing, &.show {
-                padding: $dropdown-item-padding-x;
-                border-radius: $border-radius;
-                background-color: $dropdown-bg;
-                box-shadow: $dropdown-box-shadow;
-                animation: show-navbar-collapse .2s ease forwards;
-            }
-            &.collapsing-out {
-                animation: hide-navbar-collapse .2s ease forwards;
-            }
+        .navbar {
+            padding-top: 0;
+            padding-bottom: 0;
         }
     }
-
 }
-
-// NAVBAR KEYFRAMES
-
-// -- Navbar Show
-@keyframes show-navbar-collapse {
-    0%  {opacity: 0;
-        transform: scale(.95);
-        transform-origin: 100% 0}
-    100% {opacity: 1;
-        transform: scale(1)} 
-}
-// -- Navbar Hide
-@keyframes hide-navbar-collapse {
-    from {opacity: 1;
-        transform: scale(1);
-        transform-origin: 100% 0}
-    to {opacity: 0;
-        transform: scale(.95)} 
-}
-
-// -- Dropdown Show
-@keyframes show-navbar-dropdown {
-    0% {opacity: 0;
-        transform: translate(0, 10px) perspective(200px) rotateX(-2deg);
-        transition: visibility 0.25s, opacity 0.25s, transform 0.25s
-    }
-    100% {opacity: 1;
-        transform: translate(0, 0)
-    } 
-}
-// -- Dropdown Hide
-@keyframes hide-navbar-dropdown {
-    from {opacity:1}
-      to {opacity: 0;
-        transform: translate(0, 10px)} 
-}
-
 
 // HEADROOM STYLES
 @include media-breakpoint-up(lg) {
@@ -226,12 +69,21 @@
     }
 
     .headroom--not-top {
-        .nav-item {
-            padding-bottom: $spacer / 2;
-        }
-        .nav-link {
-            padding-top: $navbar-nav-link-padding-y * 1.5 !important;
-        }
+        .navbar-brand img {height: ($header-brand-height - 0.5)}
+        .nav-item {padding-bottom: $spacer / 2}
         .btn {margin-top:.5rem}
+    }
+}
+
+.headroom--not-top {
+    &.headroom--pinned .navbar-brand {
+        img {opacity:0}
+        
+        &:after { content: '';
+            position: absolute;
+            top:0; right:0; bottom:0; left:0;
+            background: transparent $navbar-brand-lt-path center no-repeat;
+            background-size: 100% auto;
+        }
     }
 }

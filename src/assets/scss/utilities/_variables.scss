@@ -3,15 +3,15 @@
 $enable-shadows: true;
 
 // Color system
-$white   : #fff;
-$gray-100: #f6f9fc;
-$gray-200: #e9ecef;
-$gray-300: #dee2e6;
-$gray-400: #ced4da;
-$gray-500: #adb5bd;
-$gray-600: #8898aa;   // Line footer color
-$gray-700: #525f7f;   // Line p color
-$gray-800: #32325d;   // Line heading color
+$white   : #FFF;
+$gray-100: #F6F9FC;
+$gray-200: #E9ECEF; // $body-bg
+$gray-300: #DEE2E6;
+$gray-400: #CED4DA;
+$gray-500: #ADB5BD; // footer/text-muted color
+$gray-600: #8898AA; // body color
+$gray-700: #495057; // sub-heading
+$gray-800: #343A40; // heading color
 $gray-900: #212529;
 $black   : #000;
 
@@ -28,16 +28,16 @@ $grays: map-merge((
   "900": $gray-900
 ), $grays);
 
-$blue  : #5e72e4;
-$indigo: #5603ad;
-$purple: #8965e0;
-$pink  : #f3a4b5;
-$red   : #f5365c;
-$orange: #fb6340;
-$yellow: #ffd600;
-$green : #2dce89;
-$teal  : #11cdef;
-$cyan  : #2bffc6;
+$blue  : #5E72E4;
+$indigo: #5603AD;
+$purple: #8965E0;
+$pink  : #F3A4B5;
+$red   : #F5365C;
+$orange: #FB6340;
+$yellow: #FFD600;
+$green : #2DCE89;
+$teal  : #11CDEF;
+$cyan  : #44CDAB;
 
 $colors: ();
 $colors: map-merge((
@@ -53,30 +53,30 @@ $colors: map-merge((
   "cyan"      : $cyan,
   "white"     : $white,
   "gray"      : $gray-600,
-  "light"     : $gray-400,
+  "light"     : $gray-300,
   "lighter"   : $gray-200,
   "gray-dark" : $gray-800
 ), $colors);
 
-$default:       #172b4d;
-$primary:       #5e72e4;
-$secondary:     #f4f5f7;
+$default:       $gray-700;
+$primary:       #A8C62C;
+$secondary:     #DDD526;
 $success:       $green;
 $info:          $teal;
 $warning:       $orange;
 $danger:        $red;
-$light:         $gray-500;
+$light:         $gray-300;
 $dark:          $gray-900;
 $darker:        darken($gray-900, 15%);
 
-$facebook:      #3b5999;
-$twitter:       #1da1f2;
-$google-plus:   #dd4b39;
-$instagram:     #e4405f;
-$pinterest:     #bd081c;
-$youtube:       #cd201f;
-$slack:         #3aaf85;
-$dribbble:      #ea4c89;
+$facebook:      #3B5999;
+$twitter:       #1DA1F2;
+$google-plus:   #DD4B39;
+$instagram:     #E4405F;
+$pinterest:     #BD081C;
+$youtube:       #CD201F;
+$slack:         #3AAF85;
+$dribbble:      #EA4C89;
 $github:        #222222;
 
 $theme-colors: ();
@@ -186,10 +186,12 @@ $font-size-xs          : ($font-size-base * .75); // 12px
 $font-weight-normal    : 400;
 $font-weight-bold      : 600;
 $font-weight-extra-bold: 700;
+$font-weight-black     : 800;
 
 $headings-font-weight  : $font-weight-normal;
 $headings-line-height  : 1.3;
 $headings-color        : $gray-800;
+$sub-headings-color    : $gray-700;
 
 $heading-letter-spacing: .025em;
 $heading-font-size     : .95rem;
@@ -206,7 +208,7 @@ $heading-section-font-size     : 1.375rem;
 $heading-section-font-weight   : $font-weight-bold;
 $heading-section-text-transform: uppercase;
 
-$display1-size: 3.3rem;
+$display1-size: 3.5rem;
 $display2-size: 2.75rem;
 $display3-size: 2.1875rem;
 $display4-size: 1.6275rem;
@@ -219,6 +221,8 @@ $display4-weight: $display1-weight ;
 $paragraph-font-size  : $font-size-base;
 $paragraph-font-weight: 300;
 $paragraph-line-height: 1.7;
+
+$text-muted     : $gray-500;
 
 $hr-border-color: $border-color;
 
@@ -272,7 +276,10 @@ $btn-focus-box-shadow      : $btn-hover-box-shadow;
 $btn-focus-width           : $input-btn-focus-width;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius-xl:        $border-radius-xl;
+$btn-border-radius         : 2.5rem;
+$btn-border-radius-lg      : 2.5rem;
+$btn-border-radius-sm      : 2.5rem;
+$btn-border-radius-xl      : 2.5rem;
 
 
 // Forms
@@ -375,7 +382,8 @@ $nav-pills-box-shadow       : $btn-box-shadow;
 
 
 // Navbar
-$navbar-transition          : .15s linear;
+$navbar-transition             : .15s linear;
+$navbar-padding-x              : .75rem;
 
 $navbar-nav-link-padding-x     : 1rem;
 $navbar-nav-link-padding-y     : 1rem;
@@ -386,6 +394,11 @@ $navbar-nav-link-font-weight   : 400;
 $navbar-nav-link-text-transform: none;
 $navbar-nav-link-letter-spacing: 0;
 $navbar-nav-link-border-radius : 0 0 $border-radius $border-radius;
+
+$navbar-brand-path                : url("/img/brand/logo.png");
+$navbar-brand-lt-path             : url("/img/brand/logo-lt.png");
+
+$navbar-toggler-padding-x         : .25rem;
 
 $navbar-dark-bg                  : transparent;
 $navbar-dark-hover-bg            : rgba($white, .1);
@@ -435,7 +448,7 @@ $close-text-shadow  : none;
 
 
 // Popovers
-$popover-bg               : $white !default;
+$popover-bg               : $white;
 $popover-border-color     : rgba($black, .05);
 $popover-box-shadow       : 0px .5rem 2rem 0px rgba($black, .2);
 

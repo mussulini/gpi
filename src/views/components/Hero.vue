@@ -1,5 +1,5 @@
 <template>
-    <section class="section-hero section-shaped my-0">
+    <section class="section-hero section-shaped">
 
         <div class="shape shape-style-1 shape-primary">
             <span class="span-150"></span>

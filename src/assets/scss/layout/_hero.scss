@@ -1,240 +1,86 @@
-
-$shape-colors: () !default;
-$shape-colors: map-merge((
-  "default":      #32325d,
-  "primary":      #5533ff,
-  "secondary":    #24b47e,
-  "neutral":      #e9ecef,
-  "blue-gray":    #b2cbe1,
-
-), $shape-colors);
-
-$shapes-primary-colors: () !default;
-$shapes-primary-colors: map-merge((
-  "step-1-gradient-bg":         #281483,
-  "step-2-gradient-bg":         #8f6ed5,
-  "step-3-gradient-bg":         #d782d9,
-  "span-1-bg":                  #53f,
-  "span-2-bg":                  #4553ff,
-  "span-3-bg":                  #4f40ff,
-  "span-4-bg":                  #25ddf5,
-  "span-5-bg":                  #1fa2ff
-), $shapes-primary-colors);
-
-$shapes-default-colors: () !default;
-$shapes-default-colors: map-merge((
-  "step-1-gradient-bg":         #7795f8,
-  "step-2-gradient-bg":         #6772e5,
-  "step-3-gradient-bg":         #555abf,
-  "span-1-bg":                  #7795f8,
-  "span-2-bg":                  #7b9aff,
-  "span-3-bg":                  #6f8ff8,
-  "span-4-bg":                  #76eea7,
-  "span-5-bg":                  #6adaff
-), $shapes-default-colors);
-
-$shapes-light-colors: () !default;
-$shapes-light-colors: map-merge((
-  "step-1-gradient-bg":         #b2cbe1,
-  "step-2-gradient-bg":         #f6f9fc,
-  "step-3-gradient-bg":         #f6f9fc,
-  "span-1-bg":                  #b4cce1,
-  "span-2-bg":                  #c5dbef,
-  "span-3-bg":                  #b9d5ed,
-  "span-4-bg":                  #74e4a2,
-  "span-5-bg":                  #008169
-), $shapes-light-colors);
-
-$shapes-dark-colors: () !default;
-$shapes-dark-colors: map-merge((
-  "step-1-gradient-bg":         #32325d,
-  "step-2-gradient-bg":         #32325d,
-  "step-3-gradient-bg":         #32325d,
-  "span-1-bg":                  #2e2e57,
-  "span-2-bg":                  #2b2b58,
-  "span-3-bg":                  #25254d,
-  "span-4-bg":                  #d782d9,
-  "span-5-bg":                  #008169
-), $shapes-dark-colors);
-
-$shape-height-xl: 1.5;
-$shape-height-lg: 1.5;
-$shape-height-sm: 1.5;
-
-
-// Hero sections
+// BANNER
+// --
 .section-hero {
+    z-index: 1;
+    position: relative;
 
-    @include media-breakpoint-up(md) {
-        height: 100vh;
-        min-height: 500px;
+    @include media-breakpoint-down(md) {
+        padding-top: 5rem;
+        padding-bottom: 2rem;
     }
 
     .container {
+        @include media-breakpoint-up(xl) {
+            max-width: 1470px;
+        }
+        @include media-breakpoint-up(lg) {
+            .col-6 {margin-bottom: $spacer * 14}
+        }
+        @include media-breakpoint-down(md) {
+            .col-6 {
+                flex: 0 0 100%;
+                max-width: 100%;
+                text-align: center !important;
+            }
+        }
+    }
+
+    .section-header {
+        font-size: $display4-size;
+        font-weight: $font-weight-extra-bold;
+
+        @include media-breakpoint-up(lg) {
+            font-size: $display1-size;
+            font-weight: $font-weight-black;
+        }
+    }
+
+    .sub-header {
+        display: inline-block;
         position: relative;
-        padding-top: 6rem;
-        padding-bottom: 0rem;
-        height: 100%;
+        .header-sep {
+            position: absolute;
+            top: 12px; left: -50px;
+        }
+        @include media-breakpoint-down(md) {
+            font-size: $h5-font-size;
+        }
+    }
+
+    .organic-shape {
+        z-index: -1;
+        top: 0; left: 0;
+        position: absolute;
+        width: 100%; height: 100%;
+        user-select: none;
+        @include media-breakpoint-down(md) {
+            overflow: hidden;
+        }
     }
 }
 
-// Circle sections
-.section-shaped {
-    margin: 180px 0;
-    position: relative;
-
-    .stars-and-coded {
-        margin-top: 8rem;
-    }
-    
-    .shape {
+.organic-shape {
+    span {
+        display: block;
         position: absolute;
-        top: 0; z-index: -1;
-        width: 100%; height: 100%;
-
-        span {position:absolute}
-
-        &.shape-skew {
-            +.container {
-                padding-top: 0;
-                .col {margin-top:-100px}
-            }
-            + .shape-container {
-                padding-top: 18rem;
-                padding-bottom: 19rem;
-            }
-        }
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: transparent;
     }
 
-    .shape-skew {
-        transform: skewY(-8deg);
-        transform-origin: 0;
-        span {transform: skew(8deg)}
+    // SIZE & DIMENSIONS
+    .organic-shape-base  {z-index: 1; width:1157px; height:946px; left: calc(50% - 196px); top:  -92px;}
+    .organic-shape-image {z-index: 2; width:1051px; height:947px; left: calc(50% + 45px) ; top: -115px;}
+    .organic-shape-sm1   {z-index: 2; width: 995px; height:897px;right: calc(50% + 440px); bottom: -434px;}
+    .organic-shape-sm2   {z-index: 1; width:1036px; height:677px;right: calc(50% + 400px); bottom: -330px;}
+    // BG
+    .organic-shape-base  {background-image: url("/img/organic-shape-base.png")}
+    .organic-shape-image {background-image: url("/img/organic-shape-image-min.png")}
+    .organic-shape-sm1   {background-image: url("/img/organic-shape-sm1.png")}
+    .organic-shape-sm2   {background-image: url("/img/organic-shape-sm2.png")}
+    
+    @include media-breakpoint-down(md) {
+        .organic-shape-image {display: none;}
     }
-
-    // Color variations
-    .shape-primary {
-        background: linear-gradient(150deg, shapes-primary-color("step-1-gradient-bg") 15%, shapes-primary-color("step-2-gradient-bg") 70%, shapes-primary-color("step-3-gradient-bg") 94%);
-        :nth-child(1) {background: shapes-primary-color("span-1-bg")}
-        :nth-child(2) {background: shapes-primary-color("span-2-bg")}
-        :nth-child(3) {background: shapes-primary-color("span-3-bg")}
-        :nth-child(4) {background: shapes-primary-color("span-4-bg")}
-        :nth-child(5) {background: shapes-primary-color("span-5-bg")}
-    }
-
-    .shape-default {
-        background: linear-gradient(150deg, shapes-default-color("step-1-gradient-bg") 15%, shapes-default-color("step-2-gradient-bg") 70%, shapes-default-color("step-3-gradient-bg") 94%);
-        :nth-child(1) {background: shapes-default-color("span-1-bg")}
-        :nth-child(2) {background: shapes-default-color("span-2-bg")}
-        :nth-child(3) {background: shapes-default-color("span-3-bg")}
-        :nth-child(4) {background: shapes-default-color("span-4-bg")}
-        :nth-child(5) {background: shapes-default-color("span-5-bg")}
-    }
-
-    .shape-light {
-        background: linear-gradient(150deg, shapes-light-color("step-1-gradient-bg") 15%, shapes-light-color("step-2-gradient-bg") 70%, shapes-light-color("step-3-gradient-bg") 94%);
-        :nth-child(1) {background: shapes-light-color("span-1-bg")}
-        :nth-child(2) {background: shapes-light-color("span-2-bg")}
-        :nth-child(3) {background: shapes-light-color("span-3-bg")}
-        :nth-child(4) {background: shapes-light-color("span-4-bg")}
-        :nth-child(5) {background: shapes-light-color("span-5-bg")}
-    }
-
-    .shape-dark {
-        background: linear-gradient(150deg, shapes-dark-color("step-1-gradient-bg") 15%, shapes-dark-color("step-2-gradient-bg") 70%, shapes-dark-color("step-3-gradient-bg") 94%);
-        :nth-child(1) {background: shapes-dark-color("span-1-bg")}
-        :nth-child(2) {background: shapes-dark-color("span-2-bg")}
-        :nth-child(3) {background: shapes-dark-color("span-3-bg")}
-        :nth-child(4) {background: shapes-dark-color("span-4-bg")}
-        :nth-child(5) {background: shapes-dark-color("span-5-bg")}
-    }
-
-    .shape-style-1 {
-             span {border-radius: 50%;
-                   height: 120px; width: 120px}
-        .span-200 {height: 200px; width: 200px}
-        .span-150 {height: 150px; width: 150px}
-        .span-100 {height: 100px; width: 100px}
-        .span-75  {height: 75px ; width: 75px }
-        .span-50  {height: 50px ; width: 50px }
-
-        :nth-child(1) { left: -4%; bottom: auto;
-            background: rgba($white, .1);
-        }
-        :nth-child(2) { right: 4%; top: 10%;
-            background: rgba($white, .1);
-        }
-        :nth-child(3) { top: 280px; right: 5.66666%;
-            background: rgba($white, .3);
-        }
-        :nth-child(4) { top: 320px; right: 7%;
-            background: rgba($white, .15);
-        }
-        :nth-child(5) { top: 38%; left: 1%; right: auto;
-            background: rgba($white, .05);
-        }
-        :nth-child(6) {
-            width: 200px; height: 200px;
-            top: 44%; left: 10%; right: auto;
-            background: rgba($white, .15);
-        }
-        :nth-child(7) { bottom: 50%; right: 36%;
-            background: rgba($white, .04);
-        }
-        :nth-child(8) { bottom: 70px; right: 2%;
-            background: rgba($white, .2);
-        }
-        :nth-child(9) { bottom: 1%; right: 2%;
-            background: rgba($white, .1);
-        }
-        :nth-child(10) { bottom: 1%; left: 1%; right: auto;
-            background: rgba($white, .05);
-        }
-        @include media-breakpoint-down(md) {
-            span {height: 120px}
-        }
-        @include media-breakpoint-down(sm) {
-            span {height: 90px}
-        }
-
-        // shape color variations
-        &.shape-primary {background: linear-gradient(150deg, shapes-primary-color("step-1-gradient-bg") 15%, shapes-primary-color("step-2-gradient-bg") 70%, shapes-primary-color("step-3-gradient-bg") 94%)}
-        &.shape-default {background: linear-gradient(150deg, shapes-default-color("step-1-gradient-bg") 15%, shapes-default-color("step-2-gradient-bg") 70%, shapes-default-color("step-3-gradient-bg") 94%)}
-        &.shape-light {background: linear-gradient(150deg, shapes-light-color("step-1-gradient-bg") 15%, shapes-light-color("step-2-gradient-bg") 70%, shapes-light-color("step-3-gradient-bg") 94%)}
-        &.shape-dark {background: linear-gradient(150deg, shapes-dark-color("step-1-gradient-bg") 15%, shapes-dark-color("step-2-gradient-bg") 70%, shapes-dark-color("step-3-gradient-bg") 94%)}
-    }
-
-    // Styles - works with a color variation class (e.g shapes-default)
-    .shape-style-2 {
-        span {height:190px}
-        .span-sm {height:100px}
-        :nth-child(1) {width: 33.33333%; top: 0; left: -16.66666%;}
-        :nth-child(2) {width: 33.33333%; top: 0; left: 16.66666%; right: auto;}
-        :nth-child(3) {width: 33.33333%; left: 49.99999%; bottom: auto;}
-        :nth-child(4) {width: 33.33333%; top: 55%; right: -16.66666%;}
-        :nth-child(5) {width: 33.33333%; bottom: 0;}
-        @include media-breakpoint-down(md) {
-            span {height:120px}
-        }
-        @include media-breakpoint-down(sm) {
-            span {height:90px}
-        }
-    }
-
-    .shape-style-3 {
-        span {height:140px}
-        .span-sm {height:100px}
-        :nth-child(1) {width: 66%;left: -16.66666%;bottom: auto}
-        :nth-child(2) {width: 40%;top: 54%;right: -16.66666%}
-        :nth-child(3) {width: 33.33333%;top: 34%;left: -16.66666%;right: auto}
-        :nth-child(4) {width: 60%;bottom: 0;right: -16.66666%;opacity: .6}
-        :nth-child(5) {width: 33.33333%;bottom: 0}
-        @include media-breakpoint-down(md) {
-            span {height: 120px}
-        }
-        @include media-breakpoint-down(sm) {
-            span {height: 90px}
-        }
-    }
-
 }

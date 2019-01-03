@@ -31,7 +31,7 @@
                 </div>
                 <div class="col-lg-5 mb-lg-auto">
                     <div class="transform-perspective-right">
-                        <card class="border-0" type="secondary" shadow
+                        <card class="border-0" type="light" shadow
                               body-classes="px-lg-5 py-lg-5"
                               header-classes="pb-5 bg-white">
                             <template slot="header">

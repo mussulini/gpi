@@ -1,11 +1,9 @@
 @import "utilities/functions";
 @import "utilities/variables";
-@import "utilities/mixins";
 
 // Vendor
 @import "~bootstrap/scss/bootstrap";
 @import "vendors/flatpickr";
-@import "vendors/headroom";
 @import "vendors/nouislider";
 
 // Fonts
@@ -16,9 +14,9 @@
 // BASE
 // --------------------------
 
+@import "utilities/mixins";
 @import "utilities/reboot";
 @import "utilities/utilities";
-@import "utilities/global";
 
 
 // Custom Elements
@@ -30,6 +28,7 @@
 @import "elements/buttons";
 @import "elements/close";
 @import "elements/icons";
+@import "elements/images";
 @import "elements/input-group";
 @import "elements/progress";
 @import "elements/type";
@@ -41,6 +40,7 @@
 @import "components/accordion";
 @import "components/card";
 @import "components/carousel";
+@import "components/banner";
 @import "components/custom-forms";
 @import "components/dropdown";
 @import "components/forms";
@@ -50,6 +50,7 @@
 @import "components/navbar";
 @import "components/pagination";
 @import "components/popover";
+@import "components/nucleo-icons";
 
 
 // Layout

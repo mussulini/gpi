@@ -1,0 +1,17 @@
+
+
+// FLAGS
+.img-flag {
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-image: url('/img/flags.png');
+    // @include img-retina('/img/flags.png', '/img/flags@2x.png', 20px, auto);
+
+    &.flag-en {width: 20px; background-position-y: 0}
+    &.flag-cn {width: 20px; background-position: 0 -20px}
+}

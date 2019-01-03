@@ -58,7 +58,7 @@
             <modal :show.sync="modals.modal3"
                    body-classes="p-0"
                    modal-classes="modal-dialog-centered modal-sm">
-                <card type="secondary" shadow
+                <card type="lighter" shadow
                       header-classes="bg-white pb-5"
                       body-classes="px-lg-5 py-lg-5"
                       class="border-0">

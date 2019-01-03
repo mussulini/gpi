@@ -2,7 +2,7 @@
 
     <headroom class="header-global">
 
-        <base-nav class="navbar-main" type effect="light" expand>
+        <base-nav class="navbar-main" type effect="dark" expand>
             <a slot="brand" class="navbar-brand" href="">
                 <img src="img/brand/logo.png">
             </a>
@@ -36,12 +36,16 @@
                         Request Demo
                     </a>
                 </li>
-                <base-dropdown tag="li" class="nav-item">
+                <base-dropdown tag="li" class="nav-item language">
                     <a slot="title" href="#" class="nav-link" data-toggle="dropdown" role="button">
-                        <span class="nav-link-inner--text">EN</span>
+                        <span class="img-flag flag-en"></span>
+                        <span class="nav-link-inner--text">English</span>
                         <span class="fa fa-chevron-down ml-2"></span>
                     </a>
-                    <router-link to="/cn" class="dropdown-item">CN</router-link>
+                    <router-link to="/cn" class="dropdown-item">
+                        <span class="img-flag flag-cn"></span>
+                        Chinese
+                    </router-link>
                 </base-dropdown>
             </ul>
         </base-nav>

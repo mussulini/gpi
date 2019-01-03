@@ -2,19 +2,26 @@
 
 .btn {
     position: relative;
+    will-change: transform;
+    font-size: $input-btn-font-size;
+    letter-spacing: $btn-letter-spacing;
     text-transform: $btn-text-transform;
     transition: $transition-base;
-    will-change: transform;
-    letter-spacing: $btn-letter-spacing;
-    font-size: $input-btn-font-size;
-    
+
     &:hover {
-        @include box-shadow($btn-hover-box-shadow);
         transform: translateY(-1px);
+        @include box-shadow($btn-hover-box-shadow);
     }  
 
     &:not(:last-child) {
         margin-right: .5rem;
+    }
+}
+
+.btn-primary {
+    box-shadow: 0 20px 40px -10px rgba($primary, 0.6);
+    &:hover {
+        box-shadow: 0 5px 10px rgba($primary, 0.25);
     }
 }
 
@@ -124,9 +131,7 @@
 
 .btn-icon {
     .btn-inner--icon {
-        img {
-            width: 20px;
-        }
+        img {width:20px}
     }
     .btn-inner--text:not(:first-child) {
         margin-left: .75em;
@@ -137,16 +142,17 @@
 }
 
 .btn-icon-only {
+    padding: 0;
     width: 2.375rem;
     height: 2.375rem;
-    padding: 0;
+    
+    &.btn-sm {
+        width: 2rem;
+        height: 2rem;
+    }
 }
 a.btn-icon-only {
     line-height: 2.5;
-}
-.btn-icon-only.btn-sm {
-    width: 2rem;
-    height: 2rem;
 }
 
 
