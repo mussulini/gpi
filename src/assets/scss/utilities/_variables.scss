@@ -117,6 +117,12 @@ $yiq-contrasted-threshold: 200;
 $yiq-text-dark:  $gray-900;
 $yiq-text-light: $white;
 
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px
+) !default;
 
 // Spacing
 $spacer: 1rem;

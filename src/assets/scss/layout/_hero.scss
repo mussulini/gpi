@@ -75,10 +75,10 @@
     .organic-shape-sm1   {z-index: 2; width: 995px; height:897px;right: calc(50% + 440px); bottom: -434px;}
     .organic-shape-sm2   {z-index: 1; width:1036px; height:677px;right: calc(50% + 400px); bottom: -330px;}
     // BG
-    .organic-shape-base  {background-image: url("/img/organic-shape-base.png")}
-    .organic-shape-image {background-image: url("/img/organic-shape-image-min.png")}
-    .organic-shape-sm1   {background-image: url("/img/organic-shape-sm1.png")}
-    .organic-shape-sm2   {background-image: url("/img/organic-shape-sm2.png")}
+    .organic-shape-base  {background-image: url("/img/home/organic-shape-base.png")}
+    .organic-shape-image {background-image: url("/img/home/organic-shape-image-min.png")}
+    .organic-shape-sm1   {background-image: url("/img/home/organic-shape-sm1.png")}
+    .organic-shape-sm2   {background-image: url("/img/home/organic-shape-sm2.png")}
     
     @include media-breakpoint-down(md) {
         .organic-shape-image {display: none;}

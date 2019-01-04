@@ -67,9 +67,9 @@ p { font-size: $paragraph-font-size;
 .header-sep {
     width: 40px;
     height: 5px;
-    margin: auto;
-    display: block;
     border-radius: 5px;
+    display: inline-block;
+    vertical-align: super;
     @include gradient-directional($primary, $cyan, 45deg);
 }
 

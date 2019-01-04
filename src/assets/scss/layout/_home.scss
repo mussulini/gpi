@@ -1,0 +1,105 @@
+.home {
+    .btn {
+        min-width: 12.5rem; //200px
+    }
+}
+
+#prometheus {
+    background: $white url("/img/home/section-prometheus-bg.png") center no-repeat;
+    
+    @include media-breakpoint-up(lg) {
+        min-height: 900px;
+        background-position: center 70%;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        @include media-breakpoint-up(xl) {
+            height: 50vh;
+            max-width: 1200px;
+        }
+        @include media-breakpoint-down(md) {
+            .col, [class*="col-"] {
+                flex: 0 0 100%;
+                max-width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    .illustrations {
+        position: static;
+        img {
+            position: absolute;
+            left: calc(50% - 30px);
+            top: -10%;
+            @include media-breakpoint-down(md) {
+                display: none;
+            }
+        }
+    }
+}
+
+#prometheusFeatures {
+    text-align: center;
+    @include media-breakpoint-up(lg) {
+        min-height: 80vh;
+    }
+
+    .heading {
+        margin: 2rem auto 1.5rem;
+    }
+
+    p {padding: 0 ($grid-gutter-width / 3)}
+
+    @include media-breakpoint-down(sm) {
+        .col, [class*="col-"] {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+#products {
+    padding: 0; 
+    font-size: 0;
+    position: relative;
+    background-color: $white;
+
+    > .background {
+        svg {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    > .background-top {margin-top: -1px}
+    > .background-btm {margin-bottom: -1px}
+}
+
+.email-request-demo {
+    padding: 3rem;
+    border-radius: 2.5rem; // 40px
+    // @include gradient-directional($cyan, $primary, 45deg);
+    background-image: url(/img/brand/prom-logo.png), linear-gradient(45deg, #04A2D7, $cyan, $primary);
+    background-repeat: no-repeat, repeat-x;
+    background-position: -100px -30px, 0 0;
+}
+
+#templates {
+    .container {
+        @include media-breakpoint-up(lg) {
+            max-width: 1000px;
+        }
+        [class*="col-"]:nth-child(2n + 2) {
+            margin-top: $spacer * 4;
+        }
+    }
+
+    .figure-caption {
+        color: $headings-color;
+    }
+}
