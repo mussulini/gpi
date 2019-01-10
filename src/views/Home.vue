@@ -95,17 +95,17 @@
             </div>
         </section>
 
-        <section class="section">
+        <section id="requestDemo" class="section">
             <div class="container">
 
                 <div class="row email-request-demo">
-                    <div class="col-5">
+                    <div class="col-lg-5">
                         <span class="header-sep gradient-primary"></span>
                         <h1 class="section-header text-white">Get direct access to our products. It’s free!</h1>
                         <h5 class="text-white">Enter your email address to get you started.</h5>
                     </div>
 
-                    <div class="col-7">
+                    <div class="col-lg-7">
                         <div class="input-group my-5">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">
@@ -116,7 +116,7 @@
                             <div class="input-group-append">
                                 <button class="btn btn-neutral" type="button">
                                     Request Demo
-                                    <span class="fa fa-arrow-right"></span>
+                                    <span class="data-icon fa fa-arrow-right"></span>
                                 </button>
                             </div>
                         </div>
