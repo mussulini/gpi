@@ -22,7 +22,9 @@
                         <button class="btn btn-primary">Get Started</button>
                     </div>
                     <div class="col-3 illustrations">
-                        <img src="img/home/laptop.png">
+                        <span class="sprite-image image-laptop">
+                            <!-- <img src="img/home/laptop.png"> -->
+                        </span>
                     </div>
                 </div>
             </div>
@@ -37,17 +39,23 @@
 
                 <div class="row">
                     <div class="col-4">
-                        <p><img src="img/home/icon-security.png"></p>
+                        <p>
+                            <span class="sprite-image image-security"></span>
+                        </p>
                         <h5 class="heading">Security</h5>
                         <p>Users control what content should be accessible and what shouldn’t be to the public. CMS also offers extended measure of security.</p>
                     </div>
                     <div class="col-4">
-                        <p><img src="img/home/icon-monitor.png"></p>
+                        <p>
+                            <span class="sprite-image image-monitor"></span>
+                        </p>
                         <h5 class="heading">24/7 Monitored Portal</h5>
                         <p>CMS is a centrally monitored portal from where users can upload their content without knowing too many technicalities of uploading.</p>
                     </div>
                     <div class="col-4">
-                        <p><img src="img/home/icon-control.png"></p>
+                        <p>
+                            <span class="sprite-image image-control"></span>
+                        </p>
                         <h5 class="heading">Cost Control</h5>
                         <p>Fewer employees will be needed for IT department (this tips the balance in favor of businesses as it would cut down on the costs.</p>
                     </div>
@@ -60,7 +68,7 @@
         <section id="products" class="section">
             <div class="background background-top">
                 <svg height="300" viewBox="0 0 1600 300" width="1600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
+                    <linearGradient id="background-top" x1="100%" x2="0%" y1="0%" y2="100%">
                         <stop offset="0" stop-color="#3bd59e" />
                         <stop offset="1" stop-color="#f7ff02" />
                     </linearGradient>
@@ -70,7 +78,7 @@
                             <path d="m1600 0c-313 0-485.792 201.924917-728.792 224.041196-292.863 26.65515-348.5-54.152492-551.5-58.139203-137.401225-2.698545-217.164392 45.918004-319.708 78.487433v45.141471h1600z" opacity=".48" transform="matrix(1 0 0 -1 0 289.530898)" />
                             <path d="m1600 .78121634c-366.8-13.60365444-422.958 154.49800666-766.5 189.50132866-270.472 26.790698-381.563-79.013621-627.139-47.631229-55.463153 7.087379-124.2501528 28.008089-206.361 62.76213v33.627571h1600z" transform="matrix(1 0 0 -1 0 239.041018)" />
                         </g>
-                        <path d="m828.481521 98.8260918c-244.57465-20.6706793-423.472683 109.3363342-828.481521-46.8260918 405.009372 156.121584 583.907236 21.1720546 828.481521 41.8427031 202.481079 17.1126679 508.827819 217.5126149 771.523339 191.6999229-262.69658 25.876477-569.04103-169.603763-771.523339-186.7165342z" fill="url(#a)" />
+                        <path d="m828.481521 98.8260918c-244.57465-20.6706793-423.472683 109.3363342-828.481521-46.8260918 405.009372 156.121584 583.907236 21.1720546 828.481521 41.8427031 202.481079 17.1126679 508.827819 217.5126149 771.523339 191.6999229-262.69658 25.876477-569.04103-169.603763-771.523339-186.7165342z" fill="url(#background-top)" />
                     </g>
                 </svg>
             </div>

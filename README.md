@@ -75,8 +75,8 @@
 
 <hr>
 
-### Production
+### Production Build
 
 1. `$ npm run build`
 2. Set local domain on hosts i.e. `http://web.gpi.local`
-2. Setup server on nginx config and point the root directory to `dist`
+2. Setup server on nginx config and point the root directory to `/dist`
