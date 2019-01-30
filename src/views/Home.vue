@@ -92,6 +92,9 @@
                     </p>
                 </header>
             </div>
+
+            <products></products>
+
             <div class="background background-btm">
                 <svg height="240" viewBox="0 0 1600 240" width="1600" xmlns="http://www.w3.org/2000/svg">
                     <g fill="#e9ecef" fill-rule="evenodd">
@@ -143,27 +146,31 @@
                 </header>
 
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <figure class="figure">
-                            <img src="img/templates/next88-thumb-big.jpg" class="figure-img img-fluid" alt="Next88">
+                            <!-- <img src="img/templates/next88-thumb-big.jpg" class="figure-img img-fluid" alt="Next88"> -->
+                            <div class="box-preview template-01"></div>
                             <figcaption class="figure-caption heading">Next88</figcaption>
                         </figure>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <figure class="figure">
-                            <img src="img/templates/hot88-thumb-big.jpg" class="figure-img img-fluid" alt="Hot88">
+                            <!-- <img src="img/templates/hot88-thumb-big.jpg" class="figure-img img-fluid" alt="Hot88"> -->
+                            <div class="box-preview template-02"></div>
                             <figcaption class="figure-caption heading">Hot88</figcaption>
                         </figure>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <figure class="figure">
-                            <img src="img/templates/alpha88-thumb-big.jpg" class="figure-img img-fluid" alt="Alpha88">
+                            <!-- <img src="img/templates/alpha88-thumb-big.jpg" class="figure-img img-fluid" alt="Alpha88"> -->
+                            <div class="box-preview template-03"></div>
                             <figcaption class="figure-caption heading">Alpha88</figcaption>
                         </figure>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <figure class="figure">
-                            <img src="img/templates/joker88-thumb-big.jpg" class="figure-img img-fluid" alt="Joker88">
+                            <!-- <img src="img/templates/joker88-thumb-big.jpg" class="figure-img img-fluid" alt="Joker88"> -->
+                            <div class="box-preview template-04"></div>
                             <figcaption class="figure-caption heading">Joker88</figcaption>
                         </figure>
                     </div>
@@ -180,12 +187,14 @@
 </template>
 
 <script>
-    import Banner from "./components/Banner";
-    
+    import Banner from "./components/Banner"
+    import Products from "./components/Products"
+
     export default {
         name: "home",
         components: {
             Banner,
+            Products
         }
     };
 </script>

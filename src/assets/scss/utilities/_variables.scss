@@ -364,8 +364,8 @@ $form-feedback-invalid-color     : $warning;
 // Dropdown
 $dropdown-border-width      : 0;
 $dropdown-border-radius     : $border-radius-lg;
-$dropdown-box-shadow        : 0 50px 100px rgba(50, 50, 93, .1), 
-                              0 15px 35px rgba(50, 50, 93, .15), 
+$dropdown-box-shadow        : 0 50px 100px rgba(50, 50, 93, .1),
+                              0 15px 35px rgba(50, 50, 93, .15),
                               0 5px 15px rgba(0, 0, 0, .1);
 
 // Navs
@@ -509,7 +509,7 @@ $modal-backdrop-opacity        : .16;
 $modal-sm                      : 380px;
 
 
-// 
+//
 // VENDORS
 // ----------------------------------------------
 
@@ -561,13 +561,15 @@ $datepicker-dropdown-bg                   : $white;
 $datepicker-highlighted-bg                : $datepicker-active-background;
 
 
-// 
+//
 // CUSTOM COMPONENTS
 // ----------------------------------------------
 
 // Image Path
-$sprite-flag-path         : url("/img/flags.png");
+$sprite-flag-path         : url("/img/sprite-flags.png");
 $sprite-image-path        : url("/img/sprite.png");
+$sprite-slot-path         : url("/img/sprite-games.jpg");
+$sprite-template-path     : url("/img/sprite-templates.jpg");
 
 // Header
 $header-fix-height        : 100px;

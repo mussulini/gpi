@@ -1,0 +1,143 @@
+#products {
+
+    .thumbnails {
+        font-size: 0;
+        display: block;
+        @include clearfix;
+
+        // width: auto;
+        // overflow-x: auto;
+        // overflow-y: hidden;
+        // white-space: nowrap;
+
+        height: 600px;
+        width: 5000px;
+        overflow: visible;
+    }
+
+    .thumbnails,
+    .thumbnail {
+        margin: 0;
+        padding: 0;
+    }
+
+    .thumbnail {
+        width: 200px;
+        height: 200px;
+        font-size: 1rem;
+        position: relative;
+        display: inline-block;
+        background-color: $gray-100;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: $sprite-slot-path;
+
+        // row 1
+        &:nth-child(1)  {background-position: -0px      -0px}
+        &:nth-child(2)  {background-position: -200px    -0px}
+        &:nth-child(3)  {background-position: -400px    -0px}
+        &:nth-child(4)  {background-position: -600px    -0px}
+        &:nth-child(5)  {background-position: -800px    -0px}
+        &:nth-child(6)  {background-position: -1000px   -0px}
+        &:nth-child(7)  {background-position: -1200px   -0px}
+        &:nth-child(8)  {background-position: -1400px   -0px}
+        &:nth-child(9)  {background-position: -1600px   -0px}
+        &:nth-child(10) {background-position: -1800px   -0px}
+        &:nth-child(11) {background-position: -2000px   -0px}
+        &:nth-child(12) {background-position: -2200px   -0px}
+        &:nth-child(13) {background-position: -2400px   -0px}
+        &:nth-child(14) {background-position: -2600px   -0px}
+        &:nth-child(15) {background-position: -2800px   -0px}
+        &:nth-child(16) {background-position: -3000px   -0px}
+        &:nth-child(17) {background-position: -3200px   -0px}
+        &:nth-child(18) {background-position: -3400px   -0px}
+        &:nth-child(19) {background-position: -3600px   -0px}
+        &:nth-child(20) {background-position: -3800px   -0px}
+        &:nth-child(21) {background-position: -4000px   -0px}
+        &:nth-child(22) {background-position: -4200px   -0px}
+        &:nth-child(23) {background-position: -4400px   -0px}
+        &:nth-child(24) {background-position: -4600px   -0px}
+        &:nth-child(25) {background-position: -4800px   -0px}
+
+        // row 2
+        &:nth-child(27) {background-position: -200px  -200px}
+        &:nth-child(28) {background-position: -400px  -200px}
+        &:nth-child(29) {background-position: -600px  -200px}
+        &:nth-child(30) {background-position: -800px  -200px}
+        &:nth-child(31) {background-position: -1000px -200px}
+        &:nth-child(32) {background-position: -1200px -200px}
+        &:nth-child(33) {background-position: -1400px -200px}
+        &:nth-child(34) {background-position: -1600px -200px}
+        &:nth-child(35) {background-position: -1800px -200px}
+        &:nth-child(36) {background-position: -2000px -200px}
+        &:nth-child(37) {background-position: -2200px -200px}
+        &:nth-child(38) {background-position: -2400px -200px}
+        &:nth-child(39) {background-position: -2600px -200px}
+        &:nth-child(40) {background-position: -2800px -200px}
+        &:nth-child(41) {background-position: -3000px -200px}
+        &:nth-child(42) {background-position: -3200px -200px}
+        &:nth-child(43) {background-position: -3400px -200px}
+        &:nth-child(44) {background-position: -3600px -200px}
+        &:nth-child(45) {background-position: -3800px -200px}
+        &:nth-child(46) {background-position: -4000px -200px}
+        &:nth-child(47) {background-position: -4200px -200px}
+        &:nth-child(48) {background-position: -4400px -200px}
+        &:nth-child(49) {background-position: -4600px -200px}
+        &:nth-child(50) {background-position: -4800px -200px}
+        &:nth-child(51) {background-position: -0px    -200px}
+
+        // row 3
+        &:nth-child(53) {background-position: -400px  -400px}
+        &:nth-child(54) {background-position: -600px  -400px}
+        &:nth-child(55) {background-position: -800px  -400px}
+        &:nth-child(56) {background-position: -1000px -400px}
+        &:nth-child(57) {background-position: -1200px -400px}
+        &:nth-child(58) {background-position: -1400px -400px}
+        &:nth-child(59) {background-position: -1600px -400px}
+        &:nth-child(60) {background-position: -1800px -400px}
+        &:nth-child(61) {background-position: -2000px -400px}
+        &:nth-child(62) {background-position: -2200px -400px}
+        &:nth-child(63) {background-position: -2400px -400px}
+        &:nth-child(64) {background-position: -2600px -400px}
+        &:nth-child(65) {background-position: -2800px -400px}
+        &:nth-child(66) {background-position: -3000px -400px}
+        &:nth-child(67) {background-position: -3200px -400px}
+        &:nth-child(68) {background-position: -3400px -400px}
+        &:nth-child(69) {background-position: -3600px -400px}
+        &:nth-child(70) {background-position: -3800px -400px}
+        &:nth-child(71) {background-position: -4000px -400px}
+        &:nth-child(72) {background-position: -4200px -400px}
+        &:nth-child(73) {background-position: -4400px -400px}
+        &:nth-child(74) {background-position: -4600px -400px}
+        &:nth-child(75) {background-position: -4800px -400px}
+        &:nth-child(76) {background-position: -0px    -400px}
+        &:nth-child(77) {background-position: -200px  -400px}
+
+        opacity: .4;
+        perspective: 400px;
+        filter: grayscale(1);
+        transition: all .3s ease-in-out, opacity .1s ease-in-out;
+
+        @include hover-focus {
+            z-index: 1;
+            opacity: 1;
+            border-radius: .5rem;
+            filter: grayscale(0);
+            transform: scale(1.1);
+            box-shadow: 0 10px 50px rgba($blue, 0.5);
+        }
+
+    }
+
+    // Animation
+    .thumbnails {
+        animation: slide-left 50s ease-in-out infinite;
+        // &:hover {animation-play-state: paused}
+    }
+
+}
+
+@keyframes slide-left {
+      0% {transform: translateX(0)}
+    100% {transform: translateX(-2500px)}
+}
