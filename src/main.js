@@ -7,6 +7,6 @@ import Gpi from "./plugins/gpi";
 Vue.config.productionTip = false;
 Vue.use(Gpi);
 new Vue({
-    router,
-    render: h => h(App)
+  router,
+  render: h => h(App)
 }).$mount("#app");

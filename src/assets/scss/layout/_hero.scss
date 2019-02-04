@@ -79,7 +79,7 @@
     // .organic-shape-image {background-image: url("/img/home/organic-shape-image-min.png")}
     // .organic-shape-sm1   {background-image: url("/img/home/organic-shape-sm1.png")}
     // .organic-shape-sm2   {background-image: url("/img/home/organic-shape-sm2.png")}
-    
+
     @include media-breakpoint-down(md) {
         .organic-shape-image {display: none;}
     }

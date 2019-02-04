@@ -1,7 +1,7 @@
 <template>
-    <div class="home">
+    <section>
 
-        <banner id="top"></banner>
+        <hero id="top"></hero>
 
         <section id="prometheus" class="section">
             <header class="header text-center mb-5">
@@ -183,18 +183,21 @@
             </div>
         </section>
 
-    </div>
+    </section>
 </template>
 
 <script>
-    import Banner from "./components/Banner"
-    import Products from "./components/Products"
+import Hero from "./components/Banner";
+import Products from "./components/Products";
 
-    export default {
-        name: "home",
-        components: {
-            Banner,
-            Products
-        }
-    };
+export default {
+  name: "home",
+  components: {
+    Hero,
+    Products
+  },
+  beforeCreate: function() {
+    document.body.className = "home";
+  }
+};
 </script>

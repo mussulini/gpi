@@ -4,6 +4,8 @@ import Header from "./layout/starter/StarterHeader";
 import Footer from "./layout/starter/StarterFooter";
 import Home from "./views/Home.vue";
 import Cms from "./views/Cms.vue";
+import Showroom from "./views/Showroom.vue";
+import Contact from "./views/Contact.vue";
 import Components from "./views/Components.vue";
 
 Vue.use(Router);
@@ -26,6 +28,24 @@ export default new Router({
       components: {
         header: Header,
         default: Cms,
+        footer: Footer
+      }
+    },
+    {
+      path: "/showroom",
+      name: "showroom",
+      components: {
+        header: Header,
+        default: Showroom,
+        footer: Footer
+      }
+    },
+    {
+      path: "/contact",
+      name: "contact",
+      components: {
+        header: Header,
+        default: Contact,
         footer: Footer
       }
     },
