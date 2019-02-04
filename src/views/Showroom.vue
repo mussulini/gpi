@@ -30,6 +30,9 @@ export default {
   name: "showroom",
   components: {
     Banner
-  }
+  },
+  beforeCreate: function() {
+    document.body.className = "showroom";
+  },
 };
 </script>

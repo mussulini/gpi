@@ -1,0 +1,76 @@
+.contact {
+
+    .headroom {
+        background-color: rgba($header-fix-bg, 0.98);
+
+        .navbar-brand {
+            padding: 0;
+            img {opacity:0;
+                height: ($header-brand-height - 0.5)
+            }
+
+            &:after { content: '';
+                position: absolute;
+                top:0; right:0; bottom:0; left:0;
+                background: transparent $navbar-brand-lt-path center no-repeat;
+                background-size: 100% auto;
+            }
+        }
+
+        .nav-item {padding-bottom: 0.25rem}
+        .btn {margin-top:0.24rem}
+
+        @include media-breakpoint-up(lg) {
+            .nav-link {padding-top: $navbar-nav-link-padding-y}
+        }
+    }
+
+    main {
+        background: $body-bg $contact-image-path center top/auto 100% no-repeat;
+        @include media-breakpoint-up(lg) {
+            min-height: 820px;
+            // background-size: 90% auto;
+        }
+
+        > .container {
+            max-width: 600px;
+        }
+
+        // NAVTABS
+        .nav-pills {
+            justify-content: center;
+            @include media-breakpoint-up(sm) {
+                margin-top: $grid-gutter-width * 2;
+                margin-bottom: $grid-gutter-width * 1.6669; // 50px
+            }
+        }
+        .nav-item {
+            min-width: 50%;
+
+            &:not(:last-child) {padding-right:0}
+
+            &:first-child {
+                .nav-link {border-radius: 2rem 0 0 2rem}
+            }
+            &:last-child {
+                .nav-link {border-radius: 0 2rem 2rem 0}
+            }
+            .nav-link {
+                box-shadow: none;
+                text-align: center;
+                border: 2px solid $primary;
+                &:not(.active){color:$headings-color}
+                @include media-breakpoint-up(md) {
+                    font-size: $font-size-base * 1.125;
+                }
+            }
+        }
+
+        .card {
+            border: 0;
+            &-body {padding: $grid-gutter-width}
+            .btn {min-width: 200px;}
+        }
+    }
+
+}

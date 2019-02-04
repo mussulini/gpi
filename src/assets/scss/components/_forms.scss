@@ -3,6 +3,11 @@
 label {
     font-size: $font-size-sm;
 }
+.col-form-label {
+    color: $label-color;
+    line-height: 1;
+    padding-bottom: $grid-gutter-width / 3;
+}
 
 .form-control {
     font-size: $input-btn-font-size;
@@ -14,28 +19,27 @@ label {
     }
 }
 
-
-/* Textareas */
-
-textarea[resize="none"] {
-    resize: none!important;
+.form-group {
+    margin-bottom: $spacer * 1.25; // 20px
 }
 
-textarea[resize="both"] {
-    resize: both!important;
+.has-feedback { // BS-V3
+    label:after {
+        content: " *";
+        color: $danger;
+    }
 }
 
-textarea[resize="vertical"] {
-    resize: vertical!important;
+// TEXTAREAS
+textarea {
+    &[resize="none"] {resize: none!important}
+    &[resize="both"] {resize: both!important}
+    &[resize="vertical"] {resize: vertical!important}
+    &[resize="horizontal"] {resize: horizontal!important}
 }
 
-textarea[resize="horizontal"] {
-    resize: horizontal!important;
-}
 
-
-/* Alternative styles */
-
+// ALTERNATIVE STYLES
 .form-control-muted {
     background-color: $input-muted-bg;
     border-color: $input-muted-bg;
@@ -43,7 +47,6 @@ textarea[resize="horizontal"] {
 
     &:focus {
         background-color: $input-muted-bg;
-        //box-shadow: none;
     }
 }
 
@@ -57,14 +60,12 @@ textarea[resize="horizontal"] {
     }
 }
 
-// Sizes
-
+// SIZES
 .form-control-lg {
     font-size: $font-size-base;
 }
 
-// Validation
-
+// VALIDATION
 .has-success,
 .has-danger {
     position: relative;
@@ -77,8 +78,7 @@ textarea[resize="horizontal"] {
         font-family: 'NucleoIcons';
         display: inline-block;
         position: absolute;
-        right: 15px;
-        top: 2px;
+        right: 15px; top: 2px;
         transform: translateY(50%);
         border-radius: 50%;
         font-size: 9px;
@@ -104,12 +104,6 @@ textarea[resize="horizontal"] {
             color: $form-feedback-valid-color;
         }
     }
-
-    &.focused {
-        &:after {
-            //opacity: 0;
-        }
-    }
 }
 
 .has-danger {
@@ -130,10 +124,15 @@ textarea[resize="horizontal"] {
             color: $form-feedback-invalid-color;
         }
     }
+}
 
-    &.focused {
-        &:after {
-            //opacity: 0;
-        }
+// GRID
+form > .row {
+    margin-left: $grid-gutter-width / -3;
+    margin-right: $grid-gutter-width / -3;
+
+    > [class*=col-] {
+        padding-left: $grid-gutter-width / 3;
+        padding-right: $grid-gutter-width / 3;
     }
 }

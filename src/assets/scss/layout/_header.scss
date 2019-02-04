@@ -36,9 +36,9 @@
     .navbar-toggler-icon {
         background-image: $navbar-dark-toggler-icon-bg;
     }
-    
+
     // DESKTOP VIEW
-    @include media-breakpoint-up(lg) { 
+    @include media-breakpoint-up(lg) {
         .img-flag {left: 25px;
             position: absolute;
         }
@@ -60,8 +60,8 @@
 
     .headroom--top {
         .nav-link {
-            line-height: 1 !important;
-            padding-top: $navbar-nav-link-padding-y * 1.75 !important;
+            line-height: 1;
+            padding-top: $navbar-nav-link-padding-y * 1.75;
         }
         .btn {margin-top: .75rem}
         .navbar-brand {padding-top: .75rem}
@@ -81,7 +81,7 @@
 .headroom--not-top {
     &.headroom--pinned .navbar-brand {
         img {opacity:0}
-        
+
         &:after { content: '';
             position: absolute;
             top:0; right:0; bottom:0; left:0;

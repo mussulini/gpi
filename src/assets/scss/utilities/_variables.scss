@@ -289,6 +289,7 @@ $btn-border-radius-xl      : 2.5rem;
 
 
 // Forms
+$label-color               : $headings-color;
 $input-border-radius-xl    : $border-radius-xl;
 
 $input-bg                  : $white;
@@ -298,10 +299,10 @@ $input-alternative-box-shadow      : 0 1px 3px rgba(50,50,93,.15), 0 1px 0 rgba(
 $input-focus-alternative-box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
 
 $input-color               : $gray-600;
-$input-border-color        : #cad1d7;
+$input-border-color        : $gray-300;
 $input-box-shadow          : none; // 0 1px 3px 0 $gray-400;
 
-$input-focus-border-color  : rgba(50,151,211,.25);
+$input-focus-border-color  : rgba($primary,0.5);
 $input-focus-width         : 0;
 $input-focus-box-shadow    : none; //0 1px 3px 0 $gray-500;
 
@@ -570,6 +571,7 @@ $sprite-flag-path         : url("/img/sprite-flags.png");
 $sprite-image-path        : url("/img/sprite.png");
 $sprite-slot-path         : url("/img/sprite-games.jpg");
 $sprite-template-path     : url("/img/sprite-templates.jpg");
+$contact-image-path       : url("/img/contact-bg.png");
 
 // Header
 $header-fix-height        : 100px;

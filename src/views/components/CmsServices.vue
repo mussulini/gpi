@@ -90,7 +90,7 @@
                         <li>Flexibility – Customers deposit directly into the game wallet they wish to play and can start playing immediately.</li>
                         <li>Visibility – Customers can view the funds for each of their game wallets. </li>
                         <li>Seamless wallet – One seamless wallet for all your product, one step transfer to move funds for all your products, all transactions made details at your fingertips.</li>
-                        <li>All in one wallet – For our Sportsbook operators that want to integrate our Live Casino product, we offer an external wallet integration with your existing wallet. An all in one wallet for two uses.</li></li>
+                        <li>All in one wallet – For our Sportsbook operators that want to integrate our Live Casino product, we offer an external wallet integration with your existing wallet. An all in one wallet for two uses.</li>
                     </ul>
                 </b-tab>
 
