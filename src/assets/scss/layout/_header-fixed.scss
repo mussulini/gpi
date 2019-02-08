@@ -1,7 +1,9 @@
 .showroom,
-.contact {
+.contact,
+.preview {
 
     .headroom {
+        height: $header-fix-height;
         background-color: rgba($header-fix-bg, 0.98);
 
         .navbar-brand {
@@ -18,11 +20,16 @@
             }
         }
 
-        .nav-item {padding-bottom: 0.25rem}
-        .btn {margin-top:0.24rem}
+        .nav-item {
+            padding-bottom: 0.25rem;
+        }
+
+        .btn {margin-top:0}
 
         @include media-breakpoint-up(lg) {
-            .nav-link {padding-top: $navbar-nav-link-padding-y}
+            .nav-link {
+                padding-top: $navbar-nav-link-padding-y + 0.25;
+            }
         }
     }
 }

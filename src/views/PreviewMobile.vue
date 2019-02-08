@@ -9,10 +9,10 @@
                 <div class="mx-auto">
                     <b-dropdown variant="link">
                         <template slot="button-content">
-                            <span class="fa fa-desktop mr-2"></span> Desktop
+                            <span class="fa fa-mobile mr-2"></span> Mobile
                         </template>
+                        <router-link to="/preview" class="dropdown-item"><span class="fa fa-desktop mr-2"></span> Desktop</router-link>
                         <router-link to="/preview-tablet" class="dropdown-item"><span class="fa fa-tablet mr-2"></span> Tablet</router-link>
-                        <router-link to="/preview-mobile" class="dropdown-item"><span class="fa fa-mobile mr-2"></span> Mobile</router-link>
                     </b-dropdown>
                     <b-dropdown variant="link">
                         <template slot="button-content">
@@ -28,8 +28,9 @@
             </div>
         </b-navbar>
 
-        <div class="embed-responsive">
-            <iframe class="embed-responsive-item" src="//flash888.gpi-showroom.biz/"></iframe>
+        <div class="embed-responsive embed-responsive-mobile">
+            <label class="text-center small">360 x 640</label>
+            <iframe class="embed-responsive-item" src="//mtpl2.gpi-showroom.biz/"></iframe>
         </div>
 
     </section>
@@ -38,7 +39,7 @@
 <script>
 
 export default {
-  name: "preview",
+  name: "preview-mobile",
   beforeCreate: function() {
     document.body.className = "preview";
   }

@@ -19,7 +19,7 @@
                         <h1 class="heading-title text-white">Joker88</h1>
                         <span class="header-sep gradient-primary"></span>
                         <figcaption>Being the savage's bowsman, that is, the person who pulled the bow-oar in his boat (the second one from forward), it was my cheerful duty to attend upon him while taking that hard-scrabble scramble upon the dead whale's back. You have seen Italian organ-boys holding a dancing-ape by a long cord.</figcaption>
-                        <a href="" role="button" class="btn btn-primary">Live Demo</a>
+                        <router-link to="/preview" class="btn btn-primary">Live Demo</router-link>
                     </div>
                     <figure class="col img-wrapper">
                         <b-img src="https://source.unsplash.com/collection/993239/600x400" fluid-grow rounded alt="" />
@@ -34,7 +34,7 @@
                         <h1 class="heading-title text-white">Next88</h1>
                         <span class="header-sep gradient-primary"></span>
                         <figcaption>Being the savage's bowsman, that is, the person who pulled the bow-oar in his boat (the second one from forward), it was my cheerful duty to attend upon him while taking that hard-scrabble scramble upon the dead whale's back. You have seen Italian organ-boys holding a dancing-ape by a long cord.</figcaption>
-                        <a href="" role="button" class="btn btn-primary">Live Demo</a>
+                        <router-link to="/preview" class="btn btn-primary">Live Demo</router-link>
                     </div>
                     <figure class="col img-wrapper">
                         <b-img src="https://source.unsplash.com/collection/1673600/600x400" fluid-grow rounded alt="" />
@@ -49,7 +49,7 @@
                         <h1 class="heading-title text-white">Hot88</h1>
                         <span class="header-sep gradient-primary"></span>
                         <figcaption>Being the savage's bowsman, that is, the person who pulled the bow-oar in his boat (the second one from forward), it was my cheerful duty to attend upon him while taking that hard-scrabble scramble upon the dead whale's back. You have seen Italian organ-boys holding a dancing-ape by a long cord.</figcaption>
-                        <a href="" role="button" class="btn btn-primary">Live Demo</a>
+                        <router-link to="/preview" class="btn btn-primary">Live Demo</router-link>
                     </div>
                     <figure class="col img-wrapper">
                         <b-img src="https://source.unsplash.com/collection/1513994/600x400" fluid-grow rounded alt="" />
@@ -64,7 +64,7 @@
                         <h1 class="heading-title text-white">Alpha88</h1>
                         <span class="header-sep gradient-primary"></span>
                         <figcaption>Being the savage's bowsman, that is, the person who pulled the bow-oar in his boat (the second one from forward), it was my cheerful duty to attend upon him while taking that hard-scrabble scramble upon the dead whale's back. You have seen Italian organ-boys holding a dancing-ape by a long cord.</figcaption>
-                        <a href="" role="button" class="btn btn-primary">Live Demo</a>
+                        <router-link to="/preview" class="btn btn-primary">Live Demo</router-link>
                     </div>
                     <figure class="col img-wrapper">
                         <b-img src="https://source.unsplash.com/collection/502925/600x400" fluid-grow rounded alt="" />
@@ -79,7 +79,7 @@
                         <h1 class="heading-title text-white">Ace88</h1>
                         <span class="header-sep gradient-primary"></span>
                         <figcaption>Being the savage's bowsman, that is, the person who pulled the bow-oar in his boat (the second one from forward), it was my cheerful duty to attend upon him while taking that hard-scrabble scramble upon the dead whale's back. You have seen Italian organ-boys holding a dancing-ape by a long cord.</figcaption>
-                        <a href="" role="button" class="btn btn-primary">Live Demo</a>
+                        <router-link to="/preview" class="btn btn-primary">Live Demo</router-link>
                     </div>
                     <figure class="col img-wrapper">
                         <b-img src="https://source.unsplash.com/collection/1891993/600x400" fluid-grow rounded alt="" />

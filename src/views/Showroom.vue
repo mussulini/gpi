@@ -42,70 +42,103 @@
                         <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-red"></span> <span class="bg-white"></span></div>
                     </div>
                 </b-card>
-                <b-card no-body img-src="https://source.unsplash.com/collection/1673600/600x400" img-alt="" img-top>
-                    <div slot="footer">
-                        <h6 class="heading">Card Title</h6>
-                        <div class="float-right color-swatches"><span class="bg-indigo"></span> <span class="bg-purple"></span> <span class="bg-red"></span></div>
-                    </div>
-                </b-card>
-                <b-card no-body img-src="https://source.unsplash.com/collection/1513994/600x400" img-alt="" img-top>
-                    <div slot="footer">
-                        <h6 class="heading">Card Title</h6>
-                        <div class="float-right color-swatches"><span class="bg-pink"></span> <span class="bg-orange"></span> <span class="bg-cyan"></span></div>
-                    </div>
-                </b-card>
-                <b-card no-body img-src="https://source.unsplash.com/collection/502925/600x400" img-alt="" img-top>
-                    <div slot="footer">
-                        <h6 class="heading">Card Title</h6>
-                        <div class="float-right color-swatches"><span class="bg-green"></span> <span class="bg-yellow"></span> <span class="bg-blue"></span></div>
-                    </div>
-                </b-card>
-                <b-card no-body img-src="https://source.unsplash.com/collection/1891993/600x400" img-alt="" img-top>
-                    <div slot="footer">
-                        <h6 class="heading">Card Title</h6>
-                        <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-teal"></span> <span class="bg-orange"></span></div>
-                    </div>
-                </b-card>
-                <b-card no-body img-src="https://source.unsplash.com/collection/993239/600x400" img-alt="" img-top>
+                <b-card no-body>
+                    <figure class="img-wrapper">
+                        <b-img-lazy src="https://source.unsplash.com/collection/1673600/600x400" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
+                    </figure>
                     <div slot="footer">
                         <h6 class="heading">Card Title</h6>
                         <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-red"></span> <span class="bg-white"></span></div>
                     </div>
                 </b-card>
-                <b-card no-body img-src="https://source.unsplash.com/collection/1673600/600x400" img-alt="" img-top>
-                    <div slot="footer">
-                        <h6 class="heading">Card Title</h6>
-                        <div class="float-right color-swatches"><span class="bg-indigo"></span> <span class="bg-purple"></span> <span class="bg-red"></span></div>
-                    </div>
-                </b-card>
-                <b-card no-body img-src="https://source.unsplash.com/collection/1513994/600x400" img-alt="" img-top>
-                    <div slot="footer">
-                        <h6 class="heading">Card Title</h6>
-                        <div class="float-right color-swatches"><span class="bg-pink"></span> <span class="bg-orange"></span> <span class="bg-cyan"></span></div>
-                    </div>
-                </b-card>
-                <b-card no-body img-src="https://source.unsplash.com/collection/502925/600x400" img-alt="" img-top>
-                    <div slot="footer">
-                        <h6 class="heading">Card Title</h6>
-                        <div class="float-right color-swatches"><span class="bg-green"></span> <span class="bg-yellow"></span> <span class="bg-blue"></span></div>
-                    </div>
-                </b-card>
-                <b-card no-body img-src="https://source.unsplash.com/collection/1891993/600x400" img-alt="" img-top>
-                    <div slot="footer">
-                        <h6 class="heading">Card Title</h6>
-                        <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-teal"></span> <span class="bg-orange"></span></div>
-                    </div>
-                </b-card>
-                <b-card no-body img-src="https://source.unsplash.com/collection/993239/600x400" img-alt="" img-top>
+                <b-card no-body>
+                    <figure class="img-wrapper">
+                        <b-img-lazy src="https://source.unsplash.com/collection/1513994/600x400" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
+                    </figure>
                     <div slot="footer">
                         <h6 class="heading">Card Title</h6>
                         <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-red"></span> <span class="bg-white"></span></div>
                     </div>
                 </b-card>
-                <b-card no-body img-src="https://source.unsplash.com/collection/1673600/600x400" img-alt="" img-top>
+                <b-card no-body>
+                    <figure class="img-wrapper">
+                        <b-img-lazy src="https://source.unsplash.com/collection/502925/600x400" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
+                    </figure>
                     <div slot="footer">
                         <h6 class="heading">Card Title</h6>
-                        <div class="float-right color-swatches"><span class="bg-indigo"></span> <span class="bg-purple"></span> <span class="bg-red"></span></div>
+                        <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-red"></span> <span class="bg-white"></span></div>
+                    </div>
+                </b-card>
+                <b-card no-body>
+                    <figure class="img-wrapper">
+                        <b-img-lazy src="https://source.unsplash.com/collection/1891993/600x400" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
+                    </figure>
+                    <div slot="footer">
+                        <h6 class="heading">Card Title</h6>
+                        <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-red"></span> <span class="bg-white"></span></div>
+                    </div>
+                </b-card>
+                <b-card no-body>
+                    <figure class="img-wrapper">
+                        <b-img-lazy src="https://source.unsplash.com/collection/993239/600x400" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
+                    </figure>
+                    <div slot="footer">
+                        <h6 class="heading">Card Title</h6>
+                        <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-red"></span> <span class="bg-white"></span></div>
+                    </div>
+                </b-card>
+                <b-card no-body>
+                    <figure class="img-wrapper">
+                        <b-img-lazy src="https://source.unsplash.com/collection/1673600/600x400" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
+                    </figure>
+                    <div slot="footer">
+                        <h6 class="heading">Card Title</h6>
+                        <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-red"></span> <span class="bg-white"></span></div>
+                    </div>
+                </b-card>
+                <b-card no-body>
+                    <figure class="img-wrapper">
+                        <b-img-lazy src="https://source.unsplash.com/collection/1513994/600x400" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
+                    </figure>
+                    <div slot="footer">
+                        <h6 class="heading">Card Title</h6>
+                        <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-red"></span> <span class="bg-white"></span></div>
+                    </div>
+                </b-card>
+                <b-card no-body>
+                    <figure class="img-wrapper">
+                        <b-img-lazy src="https://source.unsplash.com/collection/502925/600x400" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
+                    </figure>
+                    <div slot="footer">
+                        <h6 class="heading">Card Title</h6>
+                        <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-red"></span> <span class="bg-white"></span></div>
+                    </div>
+                </b-card>
+                <b-card no-body>
+                    <figure class="img-wrapper">
+                        <b-img-lazy src="https://source.unsplash.com/collection/1891993/600x400" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
+                    </figure>
+                    <div slot="footer">
+                        <h6 class="heading">Card Title</h6>
+                        <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-red"></span> <span class="bg-white"></span></div>
+                    </div>
+                </b-card>
+                <b-card no-body>
+                    <figure class="img-wrapper">
+                        <b-img-lazy src="https://source.unsplash.com/collection/993239/600x400" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
+                    </figure>
+                    <div slot="footer">
+                        <h6 class="heading">Card Title</h6>
+                        <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-red"></span> <span class="bg-white"></span></div>
+                    </div>
+                </b-card>
+                <b-card no-body>
+                    <figure class="img-wrapper">
+                        <b-img-lazy src="https://source.unsplash.com/collection/1673600/600x400" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
+                    </figure>
+                    <div slot="footer">
+                        <h6 class="heading">Card Title</h6>
+                        <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-red"></span> <span class="bg-white"></span></div>
                     </div>
                 </b-card>
             </b-card-group>

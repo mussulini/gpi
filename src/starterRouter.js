@@ -2,17 +2,29 @@ import Vue from "vue";
 import Router from "vue-router";
 import Header from "./layout/starter/StarterHeader";
 import Footer from "./layout/starter/StarterFooter";
+import Components from "./views/Components.vue";
 import Home from "./views/Home.vue";
 import Cms from "./views/Cms.vue";
 import Showroom from "./views/Showroom.vue";
 import Contact from "./views/Contact.vue";
-import Components from "./views/Components.vue";
+import Preview from "./views/Preview.vue";
+import PreviewMobile from "./views/PreviewMobile.vue";
+import PreviewTablet from "./views/PreviewTablet.vue";
 
 Vue.use(Router);
 
 export default new Router({
   linkExactActiveClass: "active",
   routes: [
+    {
+      path: "/components",
+      name: "components",
+      components: {
+        header: Header,
+        default: Components,
+        footer: Footer
+      }
+    },
     {
       path: "/",
       name: "home",
@@ -50,12 +62,27 @@ export default new Router({
       }
     },
     {
-      path: "/components",
-      name: "components",
+      path: "/preview",
+      name: "preview",
       components: {
         header: Header,
-        default: Components,
-        footer: Footer
+        default: Preview
+      }
+    },
+    {
+      path: "/preview-tablet",
+      name: "preview-tablet",
+      components: {
+        header: Header,
+        default: PreviewTablet
+      }
+    },
+    {
+      path: "/preview-mobile",
+      name: "preview-mobile",
+      components: {
+        header: Header,
+        default: PreviewMobile
       }
     }
   ],

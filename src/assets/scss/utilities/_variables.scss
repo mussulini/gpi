@@ -12,7 +12,7 @@ $gray-500: #ADB5BD; // footer/text-muted color
 $gray-600: #868E96; // body color
 $gray-700: #495057; // sub-heading
 $gray-800: #343A40; // heading color
-$gray-900: #212529;
+$gray-900: #2A3137;
 $black   : #000;
 
 $grays: ();
@@ -574,7 +574,8 @@ $sprite-template-path     : url("/img/sprite-templates.jpg");
 $contact-image-path       : url("/img/contact-bg.png");
 
 // Header
-$header-fix-height        : 100px;
+$header-fix-height        : 54px;
+$navbar-fix-height        : 60px;
 $header-fix-bg            : $default;
 
 $header-brand-height      : $font-size-base * 2.5;

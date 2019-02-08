@@ -19,13 +19,17 @@
         .items {
             margin: auto;
             width: 100%; height: 100%;
-            padding-top: $spacer * 8;
+            padding-top: $spacer * 7;
             padding-bottom: $spacer * 9;
 
             > .row {z-index: 1;
                 position: relative;
                 max-width: var(--breakpoint-xl);
                 margin: auto;
+            }
+            .heading-title {
+                font-size: $h2-font-size;
+                font-weight: bold;
             }
             .btn {
                 min-width: 200px;
