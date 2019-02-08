@@ -36,7 +36,6 @@
 </template>
 
 <script>
-
 export default {
   name: "preview",
   beforeCreate: function() {

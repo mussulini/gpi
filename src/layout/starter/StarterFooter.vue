@@ -10,27 +10,27 @@
 
             <ul class="nav nav-footer justify-content-center">
                 <li class="nav-item">
-                    <a href="/" class="nav-link">Home</a>
+                    <router-link to="/" class="nav-link">Home</router-link>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">About Us</a>
+                    <router-link to="/about" class="nav-link">About Us</router-link>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Our Products</a>
+                    <router-link to="/products" class="nav-link">Our Products</router-link>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Privacy Policy</a>
+                    <router-link to="/privacy" class="nav-link">Privacy Policy</router-link>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Terms &amp; Condition</a>
+                    <router-link to="/terms" class="nav-link">Terms &amp; Condition</router-link>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Contact Us</a>
+                    <router-link to="/contact" class="nav-link">Contact Us</router-link>
                 </li>
             </ul>
 
             <div class="copyright">
-                Copyright &copy; <a href="/">Gameplay Interactive</a> 2018. All rights reserved.
+                Copyright &copy; <router-link to="/">Gameplay Interactive</router-link> 2018. All rights reserved.
             </div>
 
         </div>
@@ -40,7 +40,5 @@
 </template>
 
 <script>
-    export default {
-        // 
-    };
+export default {};
 </script>

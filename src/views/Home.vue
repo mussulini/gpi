@@ -19,7 +19,7 @@
                             <span class="ml-3">More games more revenue</span>
                         </h3>
                         <p class="mb-4">Learn more with Gameplay Interactive services, our clients appreciate the fast and hassle-free delivery of their customized white-label iGaming Platform, Reseller and API Integration.</p>
-                        <button class="btn btn-primary">Get Started</button>
+                        <router-link to="/cms" class="btn btn-primary">Get Started</router-link>
                     </div>
                     <div class="col-3 illustrations">
                         <span class="sprite-image image-laptop">
@@ -61,7 +61,7 @@
                     </div>
                 </div>
 
-                <button class="btn btn-primary mt-5">Learn More</button>
+                <router-link to="/cms" class="btn btn-primary">Learn More</router-link>
             </div>
         </section>
 
@@ -129,6 +129,10 @@
                                     Request Demo
                                     <span class="data-icon fa fa-arrow-right"></span>
                                 </button>
+                                <!-- <router-link to="/contact" class="btn btn-neutral">
+                                    Request Demo
+                                    <span class="data-icon fa fa-arrow-right"></span>
+                                </router-link> -->
                             </div>
                         </div>
                     </div>
@@ -178,7 +182,7 @@
 
                 <footer class="footer text-center mt-4">
                     <p>We let you test our complete suite of features — with zero risk.</p>
-                    <button class="btn btn-primary">View more templates</button>
+                    <router-link to="/showroom" class="btn btn-primary">View more templates</router-link>
                 </footer>
             </div>
         </section>
