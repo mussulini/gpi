@@ -1,22 +1,117 @@
 <template>
     <div class="showroom">
 
-        <banner id="top"></banner>
+        <hero></hero>
 
-        <div class="container">
-            <div class="row">
-                <div class="col col-6 offset-3">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac sem ligula. Suspendisse potenti. Mauris sit amet risus in nisi molestie hendrerit et ac augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed interdum lobortis quam. Aenean dolor sem, porttitor vel tincidunt id, pharetra vel mi. Vestibulum venenatis lorem non felis rhoncus interdum. Nunc ut porta libero, id hendrerit diam. Pellentesque eget nibh placerat, vestibulum quam eget, scelerisque dolor. Sed a est ut purus scelerisque congue. Curabitur at sollicitudin metus.</p>
-                    <p>Proin et ultrices dolor, vel facilisis ante. Pellentesque nec ante sed magna luctus finibus. Ut sit amet volutpat est, sit amet volutpat ante. Suspendisse suscipit egestas lorem, interdum dignissim erat luctus vitae. Quisque lobortis volutpat porta. Vestibulum mollis neque vel sollicitudin molestie. Phasellus placerat tortor eu malesuada accumsan. Integer pretium, orci ac tempus gravida, nulla eros fringilla quam, ut lobortis justo est ac mi. Maecenas quis dui a ante tincidunt egestas eget sit amet diam. Nullam in cursus elit, nec ullamcorper lectus. Vivamus ullamcorper sodales nunc, sed aliquam odio varius sed. Praesent molestie metus nec mauris mollis rutrum.</p>
-                    <p>Cras id massa ante. Nunc laoreet, lacus id pellentesque blandit, sapien dolor porttitor nisi, ac pellentesque sapien diam eu urna. Cras nec interdum velit, vel iaculis est. Sed bibendum leo sit amet odio elementum, non sodales lacus tincidunt. In eget nisl sed lacus semper volutpat. Curabitur a elit non magna lacinia tempor. Aliquam ut maximus nunc. Praesent vestibulum nibh pulvinar ex molestie luctus. Mauris mollis est orci, sit amet posuere odio porta at. Proin elementum orci justo, ut cursus ipsum tincidunt non. Duis eu est eget nisi vehicula convallis id eu turpis. Cras tempus id augue nec venenatis. Donec gravida, urna vel sagittis tincidunt, arcu nisl congue velit, nec vestibulum libero tortor quis ligula. Aenean a sollicitudin leo, nec lacinia ipsum.</p>
-                    <p>Fusce dolor lacus, feugiat quis pellentesque ac, iaculis nec neque. Fusce metus urna, tincidunt vitae rhoncus eu, fermentum sed augue. Nulla turpis tortor, vehicula sit amet arcu a, ornare fringilla lectus. Suspendisse vitae ullamcorper nisi. Nulla vulputate pellentesque iaculis. Nulla at tellus vel leo bibendum tempus. Vivamus eu vulputate nibh. Nam dignissim velit vel dignissim tempor. Praesent scelerisque feugiat euismod. Suspendisse justo odio, suscipit efficitur pharetra tempor, cursus id nunc. Aliquam erat volutpat. Phasellus tristique aliquam egestas. Duis vitae ligula nisl.</p>
-                    <p>Cras fermentum posuere lacinia. Morbi nec arcu felis. Nam euismod lectus in justo elementum, a molestie turpis semper. Nulla at tincidunt dui, eget placerat ligula. Donec blandit, turpis et pretium tristique, justo ligula aliquet nunc, non fringilla lacus ex vitae elit. Nulla facilisi. In bibendum commodo eros a cursus. Nulla bibendum enim et est tempus, id facilisis dolor venenatis. Nulla quis sollicitudin orci. Vestibulum sed laoreet purus. Etiam auctor vestibulum ligula in mattis. Fusce vitae ex at enim venenatis porta vitae tempor massa. Praesent euismod lacus ac massa pharetra ultrices. Donec sit amet metus viverra, imperdiet tellus quis, euismod purus. Suspendisse consequat volutpat velit, ac pellentesque risus ullamcorper in. Sed ante neque, finibus id risus nec, tristique sagittis leo.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac sem ligula. Suspendisse potenti. Mauris sit amet risus in nisi molestie hendrerit et ac augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed interdum lobortis quam. Aenean dolor sem, porttitor vel tincidunt id, pharetra vel mi. Vestibulum venenatis lorem non felis rhoncus interdum. Nunc ut porta libero, id hendrerit diam. Pellentesque eget nibh placerat, vestibulum quam eget, scelerisque dolor. Sed a est ut purus scelerisque congue. Curabitur at sollicitudin metus.</p>
-                    <p>Proin et ultrices dolor, vel facilisis ante. Pellentesque nec ante sed magna luctus finibus. Ut sit amet volutpat est, sit amet volutpat ante. Suspendisse suscipit egestas lorem, interdum dignissim erat luctus vitae. Quisque lobortis volutpat porta. Vestibulum mollis neque vel sollicitudin molestie. Phasellus placerat tortor eu malesuada accumsan. Integer pretium, orci ac tempus gravida, nulla eros fringilla quam, ut lobortis justo est ac mi. Maecenas quis dui a ante tincidunt egestas eget sit amet diam. Nullam in cursus elit, nec ullamcorper lectus. Vivamus ullamcorper sodales nunc, sed aliquam odio varius sed. Praesent molestie metus nec mauris mollis rutrum.</p>
-                    <p>Cras id massa ante. Nunc laoreet, lacus id pellentesque blandit, sapien dolor porttitor nisi, ac pellentesque sapien diam eu urna. Cras nec interdum velit, vel iaculis est. Sed bibendum leo sit amet odio elementum, non sodales lacus tincidunt. In eget nisl sed lacus semper volutpat. Curabitur a elit non magna lacinia tempor. Aliquam ut maximus nunc. Praesent vestibulum nibh pulvinar ex molestie luctus. Mauris mollis est orci, sit amet posuere odio porta at. Proin elementum orci justo, ut cursus ipsum tincidunt non. Duis eu est eget nisi vehicula convallis id eu turpis. Cras tempus id augue nec venenatis. Donec gravida, urna vel sagittis tincidunt, arcu nisl congue velit, nec vestibulum libero tortor quis ligula. Aenean a sollicitudin leo, nec lacinia ipsum.</p>
-                    <p>Fusce dolor lacus, feugiat quis pellentesque ac, iaculis nec neque. Fusce metus urna, tincidunt vitae rhoncus eu, fermentum sed augue. Nulla turpis tortor, vehicula sit amet arcu a, ornare fringilla lectus. Suspendisse vitae ullamcorper nisi. Nulla vulputate pellentesque iaculis. Nulla at tellus vel leo bibendum tempus. Vivamus eu vulputate nibh. Nam dignissim velit vel dignissim tempor. Praesent scelerisque feugiat euismod. Suspendisse justo odio, suscipit efficitur pharetra tempor, cursus id nunc. Aliquam erat volutpat. Phasellus tristique aliquam egestas. Duis vitae ligula nisl.</p>
-                    <p>Cras fermentum posuere lacinia. Morbi nec arcu felis. Nam euismod lectus in justo elementum, a molestie turpis semper. Nulla at tincidunt dui, eget placerat ligula. Donec blandit, turpis et pretium tristique, justo ligula aliquet nunc, non fringilla lacus ex vitae elit. Nulla facilisi. In bibendum commodo eros a cursus. Nulla bibendum enim et est tempus, id facilisis dolor venenatis. Nulla quis sollicitudin orci. Vestibulum sed laoreet purus. Etiam auctor vestibulum ligula in mattis. Fusce vitae ex at enim venenatis porta vitae tempor massa. Praesent euismod lacus ac massa pharetra ultrices. Donec sit amet metus viverra, imperdiet tellus quis, euismod purus. Suspendisse consequat volutpat velit, ac pellentesque risus ullamcorper in. Sed ante neque, finibus id risus nec, tristique sagittis leo.</p>
-                </div>
+        <nav class="navbar">
+            <div class="container">
+                <b-form inline>
+                    <label class="mr-sm-2">Filter by</label>
+                    <b-form-select
+                        class="mb-2 mr-sm-3 mb-sm-0"
+                        :value="null">
+                        <option slot="first" :value="null">Popular Template</option>
+                    </b-form-select>
+                    <b-form-select
+                        class="mb-2 mr-sm-3 mb-sm-0"
+                        :value="null">
+                        <option slot="first" :value="null">Layout</option>
+                    </b-form-select>
+                    <b-form-select
+                        class="mb-2 mr-sm-3 mb-sm-0"
+                        :value="null">
+                        <option slot="first" :value="null">Color System</option>
+                    </b-form-select>
+                </b-form>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="#" class="btn btn-neutral"><i class="fa fa-th-large"></i></a></li>
+                    <li class="nav-item"><a href="#" class="btn btn-link"><i class="fa fa-th"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container card-templates">
+
+            <b-card-group deck>
+                <b-card no-body>
+                    <figure class="img-wrapper">
+                        <b-img-lazy src="https://source.unsplash.com/collection/993239/600x400" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
+                    </figure>
+                    <div slot="footer">
+                        <h6 class="heading">Card Title</h6>
+                        <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-red"></span> <span class="bg-white"></span></div>
+                    </div>
+                </b-card>
+                <b-card no-body img-src="https://source.unsplash.com/collection/1673600/600x400" img-alt="" img-top>
+                    <div slot="footer">
+                        <h6 class="heading">Card Title</h6>
+                        <div class="float-right color-swatches"><span class="bg-indigo"></span> <span class="bg-purple"></span> <span class="bg-red"></span></div>
+                    </div>
+                </b-card>
+                <b-card no-body img-src="https://source.unsplash.com/collection/1513994/600x400" img-alt="" img-top>
+                    <div slot="footer">
+                        <h6 class="heading">Card Title</h6>
+                        <div class="float-right color-swatches"><span class="bg-pink"></span> <span class="bg-orange"></span> <span class="bg-cyan"></span></div>
+                    </div>
+                </b-card>
+                <b-card no-body img-src="https://source.unsplash.com/collection/502925/600x400" img-alt="" img-top>
+                    <div slot="footer">
+                        <h6 class="heading">Card Title</h6>
+                        <div class="float-right color-swatches"><span class="bg-green"></span> <span class="bg-yellow"></span> <span class="bg-blue"></span></div>
+                    </div>
+                </b-card>
+                <b-card no-body img-src="https://source.unsplash.com/collection/1891993/600x400" img-alt="" img-top>
+                    <div slot="footer">
+                        <h6 class="heading">Card Title</h6>
+                        <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-teal"></span> <span class="bg-orange"></span></div>
+                    </div>
+                </b-card>
+                <b-card no-body img-src="https://source.unsplash.com/collection/993239/600x400" img-alt="" img-top>
+                    <div slot="footer">
+                        <h6 class="heading">Card Title</h6>
+                        <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-red"></span> <span class="bg-white"></span></div>
+                    </div>
+                </b-card>
+                <b-card no-body img-src="https://source.unsplash.com/collection/1673600/600x400" img-alt="" img-top>
+                    <div slot="footer">
+                        <h6 class="heading">Card Title</h6>
+                        <div class="float-right color-swatches"><span class="bg-indigo"></span> <span class="bg-purple"></span> <span class="bg-red"></span></div>
+                    </div>
+                </b-card>
+                <b-card no-body img-src="https://source.unsplash.com/collection/1513994/600x400" img-alt="" img-top>
+                    <div slot="footer">
+                        <h6 class="heading">Card Title</h6>
+                        <div class="float-right color-swatches"><span class="bg-pink"></span> <span class="bg-orange"></span> <span class="bg-cyan"></span></div>
+                    </div>
+                </b-card>
+                <b-card no-body img-src="https://source.unsplash.com/collection/502925/600x400" img-alt="" img-top>
+                    <div slot="footer">
+                        <h6 class="heading">Card Title</h6>
+                        <div class="float-right color-swatches"><span class="bg-green"></span> <span class="bg-yellow"></span> <span class="bg-blue"></span></div>
+                    </div>
+                </b-card>
+                <b-card no-body img-src="https://source.unsplash.com/collection/1891993/600x400" img-alt="" img-top>
+                    <div slot="footer">
+                        <h6 class="heading">Card Title</h6>
+                        <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-teal"></span> <span class="bg-orange"></span></div>
+                    </div>
+                </b-card>
+                <b-card no-body img-src="https://source.unsplash.com/collection/993239/600x400" img-alt="" img-top>
+                    <div slot="footer">
+                        <h6 class="heading">Card Title</h6>
+                        <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-red"></span> <span class="bg-white"></span></div>
+                    </div>
+                </b-card>
+                <b-card no-body img-src="https://source.unsplash.com/collection/1673600/600x400" img-alt="" img-top>
+                    <div slot="footer">
+                        <h6 class="heading">Card Title</h6>
+                        <div class="float-right color-swatches"><span class="bg-indigo"></span> <span class="bg-purple"></span> <span class="bg-red"></span></div>
+                    </div>
+                </b-card>
+            </b-card-group>
+
+            <div class="text-center my-5">
+                <button class="btn btn-primary">Load more</button>
             </div>
         </div>
 
@@ -24,15 +119,15 @@
 </template>
 
 <script>
-import Banner from "./components/Banner";
+import Hero from "./components/ShowroomBanner";
 
 export default {
   name: "showroom",
-  components: {
-    Banner
-  },
   beforeCreate: function() {
     document.body.className = "showroom";
   },
+  components: {
+    Hero
+  }
 };
 </script>

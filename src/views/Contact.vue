@@ -101,7 +101,7 @@ export default {
         name: "",
         phone: "",
         skype: "",
-        name: ""
+        email: ""
       },
       show: true
     };

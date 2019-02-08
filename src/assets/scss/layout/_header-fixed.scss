@@ -1,0 +1,28 @@
+.showroom,
+.contact {
+
+    .headroom {
+        background-color: rgba($header-fix-bg, 0.98);
+
+        .navbar-brand {
+            padding: 0;
+            img {opacity:0;
+                height: ($header-brand-height - 0.5)
+            }
+
+            &:after { content: '';
+                position: absolute;
+                top:0; right:0; bottom:0; left:0;
+                background: transparent $navbar-brand-lt-path center no-repeat;
+                background-size: 100% auto;
+            }
+        }
+
+        .nav-item {padding-bottom: 0.25rem}
+        .btn {margin-top:0.24rem}
+
+        @include media-breakpoint-up(lg) {
+            .nav-link {padding-top: $navbar-nav-link-padding-y}
+        }
+    }
+}

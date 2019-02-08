@@ -5,6 +5,7 @@
 @import "~bootstrap/scss/bootstrap";
 @import "vendors/flatpickr";
 @import "vendors/nouislider";
+@import "~tiny-slider/src/tiny-slider";
 
 // Fonts
 @import "../fonts/nucleo/css/nucleo.css";
@@ -32,6 +33,7 @@
 @import "elements/input-group";
 @import "elements/progress";
 @import "elements/type";
+@import "elements/colors";
 
 
 // Components
@@ -59,9 +61,11 @@
 
 @import "layout/grid";
 @import "layout/header";
+@import "layout/header-fixed";
 @import "layout/hero";
 @import "layout/footer";
 @import "layout/section";
 @import "layout/home";
 @import "layout/cms";
+@import "layout/showroom";
 @import "layout/contact";
