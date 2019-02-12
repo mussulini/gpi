@@ -3,12 +3,13 @@
 # GPI Showroom
 
 ### Installation
-
-1. `$ cd Codes`
-2. `$ git clone [repo]`
-3. `$ npm install`
-4. `$ npm run dev`
-5. Preview in browser `http://localhost:8081/`
+1. **Fork this REPO** and go to your page to copy and Clone with SSH (or HTTPS) URL
+2. Open Terminal
+3. Go to your prefered directory i.e. `$ cd Codes`
+4. `$ git clone [repo]` ex. `$ git clone git@github.com:[X-USER]/GPIShowroom.git`
+5. `$ npm install`
+6. `$ npm run dev`
+7. Preview in browser `http://localhost:8081/`
 
 <hr>
 
