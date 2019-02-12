@@ -63,8 +63,36 @@
     }
 
     .sprite-image {
+        position: relative;
         display: inline-block;
         width: 180px; height: 180px;
+        @include gradient-radial(rgba($black, 0.5) 0%, rgba($black, 0) 55%);
+        background-position: center;
+
+        svg {position:absolute}
+
+        &.image-security, &.image-monitor, &.image-control {}
+
+        &.image-security {
+            .icon-image  {left:53px; top:77px; z-index:3}
+            .icon-base-1 {left:8px; top:27px;  z-index:1; animation: wave 8s ease-in-out infinite both;}
+            .icon-base-2 {left:12px; top:14px; z-index:2; animation: wave 7s ease infinite both alternate;}
+        }
+        &.image-monitor {
+            .icon-image  {left:49px; top:52px; z-index:3}
+            .icon-base-1 {left:6px; top:24px;  z-index:1; animation: wave 10s ease-in-out infinite both alternate;}
+            .icon-base-2 {left:16px; top:24px; z-index:2; animation: wave 9s ease infinite both;}
+        }
+        &.image-control {
+            .icon-image  {left:53px; top:58px; z-index:3}
+            .icon-base-1 {left:8px; top:23px;  z-index:1; animation: wave 9s ease-in-out infinite both;}
+            .icon-base-2 {left:18px; top:23px; z-index:2; animation: wave 8s ease infinite both alternate;}
+        }
+
+        @keyframes wave {
+            0%,100% {transform: none}
+                50% {transform: translateY(8px) rotateY(10deg) rotateZ(-10deg)}
+        }
     }
 }
 
@@ -101,8 +129,7 @@
         color: $body-bg;
     }
 
-    &:before,
-    &:after {
+    &:before, &:after {
         content: '';
         display: block;
         position: absolute;
@@ -173,6 +200,23 @@
     .form-control, .btn {
         padding-top: $input-btn-padding-x-lg;
         padding-bottom: $input-btn-padding-x-lg;
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 3rem;
+        margin-left: 10px; margin-right: 10px;
+
+        .input-group {margin-top: 1rem !important}
+
+        .input-group-append {
+            position: absolute; width: 100%;
+            top: calc(100% + #{$grid-gutter-width / 2});
+
+            .btn { width: 100%; // 62px
+                max-width: 300px;
+                height: 3.875rem; margin: auto;
+            }
+        }
     }
 }
 

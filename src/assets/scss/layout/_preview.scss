@@ -19,9 +19,11 @@
                 left: 20px !important;
                 background-color: $gray-800;
                 &:before {display: none}
+                .fa {width: 15px; text-align: center}
             }
             .dropdown-item {
-                @include hover-focus {
+                &.active,
+                &:hover, &:focus {
                     color: $gray-200;
                     background-color: $gray-900;
                 }

@@ -8,10 +8,10 @@
             :autoplayButtonOutput="false"
             :loop="true"
             :navAsThumbnails="true"
+            :autoplay="true"
             mode="gallery"
             navContainer="#customize-thumbnails"
             controlsContainer="#customize-controls">
-            <!-- :autoplay="true" -->
 
             <div class="items container-fluid">
                 <div class="row no-gutters">
@@ -22,10 +22,10 @@
                         <router-link to="/preview" class="btn btn-primary">Live Demo</router-link>
                     </div>
                     <figure class="col img-wrapper">
-                        <b-img src="https://source.unsplash.com/collection/993239/600x400" fluid-grow rounded alt="" />
+                        <b-img src="img/templates/thumbnails/tpl-01.jpg" fluid-grow rounded alt="" />
                     </figure>
                 </div>
-                <div class="bg" style="background-image:url(https://source.unsplash.com/collection/993239/600x400)"></div>
+                <div class="bg" style="background-image:url('img/templates/thumbnails/tpl-01.jpg')"></div>
             </div>
 
             <div class="items container-fluid">
@@ -37,10 +37,10 @@
                         <router-link to="/preview" class="btn btn-primary">Live Demo</router-link>
                     </div>
                     <figure class="col img-wrapper">
-                        <b-img src="https://source.unsplash.com/collection/1673600/600x400" fluid-grow rounded alt="" />
+                        <b-img src="img/templates/thumbnails/tpl-02.jpg" fluid-grow rounded alt="" />
                     </figure>
                 </div>
-                <div class="bg" style="background-image:url(https://source.unsplash.com/collection/1673600/600x400)"></div>
+                <div class="bg" style="background-image:url('img/templates/thumbnails/tpl-02.jpg')"></div>
             </div>
 
             <div class="items container-fluid">
@@ -52,10 +52,10 @@
                         <router-link to="/preview" class="btn btn-primary">Live Demo</router-link>
                     </div>
                     <figure class="col img-wrapper">
-                        <b-img src="https://source.unsplash.com/collection/1513994/600x400" fluid-grow rounded alt="" />
+                        <b-img src="img/templates/thumbnails/tpl-03.jpg" fluid-grow rounded alt="" />
                     </figure>
                 </div>
-                <div class="bg" style="background-image:url(https://source.unsplash.com/collection/1513994/600x400)"></div>
+                <div class="bg" style="background-image:url('img/templates/thumbnails/tpl-03.jpg')"></div>
             </div>
 
             <div class="items container-fluid">
@@ -67,10 +67,10 @@
                         <router-link to="/preview" class="btn btn-primary">Live Demo</router-link>
                     </div>
                     <figure class="col img-wrapper">
-                        <b-img src="https://source.unsplash.com/collection/502925/600x400" fluid-grow rounded alt="" />
+                        <b-img src="img/templates/thumbnails/tpl-04.jpg" fluid-grow rounded alt="" />
                     </figure>
                 </div>
-                <div class="bg" style="background-image:url(https://source.unsplash.com/collection/502925/600x400)"></div>
+                <div class="bg" style="background-image:url('img/templates/thumbnails/tpl-04.jpg')"></div>
             </div>
 
             <div class="items container-fluid">
@@ -82,10 +82,10 @@
                         <router-link to="/preview" class="btn btn-primary">Live Demo</router-link>
                     </div>
                     <figure class="col img-wrapper">
-                        <b-img src="https://source.unsplash.com/collection/1891993/600x400" fluid-grow rounded alt="" />
+                        <b-img src="img/templates/thumbnails/tpl-05.jpg" fluid-grow rounded alt="" />
                     </figure>
                 </div>
-                <div class="bg" style="background-image:url(https://source.unsplash.com/collection/1891993/600x400)"></div>
+                <div class="bg" style="background-image:url('img/templates/thumbnails/tpl-05.jpg')"></div>
             </div>
 
         </vue-tiny-slider>
@@ -104,19 +104,19 @@
                 <h6 class="heading">Gallery</h6>
                 <ul id="customize-thumbnails" class="list-inline thumbnails">
                     <li data-nav="0" aria-label="Carousel Page 0" aria-controls="customize" class="list-inline-item active">
-                        <div class="img-wrapper"><b-img src="https://source.unsplash.com/collection/993239/600x400" width="140" fluid rounded /></div>
+                        <div class="img-wrapper"><b-img src="img/templates/thumbnails/tpl-01.jpg" width="140" fluid rounded /></div>
                     </li>
                     <li data-nav="1" aria-label="Carousel Page 1" aria-controls="customize" class="list-inline-item">
-                        <div class="img-wrapper"><b-img src="https://source.unsplash.com/collection/1673600/600x400" width="140" fluid rounded /></div>
+                        <div class="img-wrapper"><b-img src="img/templates/thumbnails/tpl-02.jpg" width="140" fluid rounded /></div>
                     </li>
                     <li data-nav="2" aria-label="Carousel Page 2" aria-controls="customize" class="list-inline-item">
-                        <div class="img-wrapper"><b-img src="https://source.unsplash.com/collection/1513994/600x400" width="140" fluid rounded /></div>
+                        <div class="img-wrapper"><b-img src="img/templates/thumbnails/tpl-03.jpg" width="140" fluid rounded /></div>
                     </li>
                     <li data-nav="3" aria-label="Carousel Page 3" aria-controls="customize" class="list-inline-item">
-                        <div class="img-wrapper"><b-img src="https://source.unsplash.com/collection/502925/600x400" width="140" fluid rounded /></div>
+                        <div class="img-wrapper"><b-img src="img/templates/thumbnails/tpl-04.jpg" width="140" fluid rounded /></div>
                     </li>
                     <li data-nav="4" aria-label="Carousel Page 4" aria-controls="customize" class="list-inline-item">
-                        <div class="img-wrapper"><b-img src="https://source.unsplash.com/collection/1891993/600x400" width="140" fluid rounded /></div>
+                        <div class="img-wrapper"><b-img src="img/templates/thumbnails/tpl-05.jpg" width="140" fluid rounded /></div>
                     </li>
                 </ul>
             </div>

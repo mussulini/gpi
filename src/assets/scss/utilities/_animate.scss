@@ -1,0 +1,18 @@
+$use-fade  : true;
+// $use-slide : true;
+
+@import "~animate-sass/helpers/mixins",
+	    "~animate-sass/helpers/settings",
+	    "~animate-sass/helpers/base";
+
+
+// FADE
+@import	"~animate-sass/animations/fade-enter/fadeIn",
+        "~animate-sass/animations/fade-enter/fadeInDown",
+        "~animate-sass/animations/fade-enter/fadeInDownBig",
+        "~animate-sass/animations/fade-enter/fadeInLeft",
+        "~animate-sass/animations/fade-enter/fadeInLeftBig",
+        "~animate-sass/animations/fade-enter/fadeInRight",
+        "~animate-sass/animations/fade-enter/fadeInRightBig",
+        "~animate-sass/animations/fade-enter/fadeInUp",
+        "~animate-sass/animations/fade-enter/fadeInUpBig";

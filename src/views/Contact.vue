@@ -80,6 +80,14 @@
 
             <b-card>
                 <h1 class="heading-title text-center">Sales Inquiry</h1>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Ut imperdiet elit a tellus semper, in interdum purus suscipit.
+                  Duis non libero dictum, tristique elit quis, imperdiet sem. <a href="">Vivamus in ipsum nunc.</a> </p>
+                <p>Donec non tristique lectus. Praesent id convallis ante, nec sagittis erat.
+                  Nulla in mattis lacus. Nunc diam dolor, suscipit et arcu id, fringilla scelerisque neque.
+                  Suspendisse quis varius neque. Nam vestibulum sapien ante, et lobortis mauris rutrum sit amet.</p>
+                <p>In finibus efficitur nunc at luctus. Morbi dapibus nisi convallis, finibus erat vulputate, pharetra magna.</p>
             </b-card>
 
         </b-tab>

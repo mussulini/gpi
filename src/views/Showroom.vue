@@ -35,7 +35,7 @@
             <b-card-group deck>
                 <b-card no-body>
                     <figure class="img-wrapper">
-                        <b-img-lazy src="https://source.unsplash.com/collection/993239/600x400" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
+                        <b-img-lazy src="img/templates/thumbnails/tpl-01.jpg" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
                     </figure>
                     <div slot="footer">
                         <h6 class="heading">Card Title</h6>
@@ -44,7 +44,7 @@
                 </b-card>
                 <b-card no-body>
                     <figure class="img-wrapper">
-                        <b-img-lazy src="https://source.unsplash.com/collection/1673600/600x400" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
+                        <b-img-lazy src="img/templates/thumbnails/tpl-02.jpg" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
                     </figure>
                     <div slot="footer">
                         <h6 class="heading">Card Title</h6>
@@ -53,7 +53,7 @@
                 </b-card>
                 <b-card no-body>
                     <figure class="img-wrapper">
-                        <b-img-lazy src="https://source.unsplash.com/collection/1513994/600x400" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
+                        <b-img-lazy src="img/templates/thumbnails/tpl-03.jpg" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
                     </figure>
                     <div slot="footer">
                         <h6 class="heading">Card Title</h6>
@@ -62,7 +62,7 @@
                 </b-card>
                 <b-card no-body>
                     <figure class="img-wrapper">
-                        <b-img-lazy src="https://source.unsplash.com/collection/502925/600x400" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
+                        <b-img-lazy src="img/templates/thumbnails/tpl-04.jpg" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
                     </figure>
                     <div slot="footer">
                         <h6 class="heading">Card Title</h6>
@@ -71,7 +71,7 @@
                 </b-card>
                 <b-card no-body>
                     <figure class="img-wrapper">
-                        <b-img-lazy src="https://source.unsplash.com/collection/1891993/600x400" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
+                        <b-img-lazy src="img/templates/thumbnails/tpl-05.jpg" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
                     </figure>
                     <div slot="footer">
                         <h6 class="heading">Card Title</h6>
@@ -80,7 +80,7 @@
                 </b-card>
                 <b-card no-body>
                     <figure class="img-wrapper">
-                        <b-img-lazy src="https://source.unsplash.com/collection/993239/600x400" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
+                        <b-img-lazy src="img/templates/thumbnails/tpl-06.jpg" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
                     </figure>
                     <div slot="footer">
                         <h6 class="heading">Card Title</h6>
@@ -89,7 +89,7 @@
                 </b-card>
                 <b-card no-body>
                     <figure class="img-wrapper">
-                        <b-img-lazy src="https://source.unsplash.com/collection/1673600/600x400" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
+                        <b-img-lazy src="img/templates/thumbnails/tpl-07.jpg" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
                     </figure>
                     <div slot="footer">
                         <h6 class="heading">Card Title</h6>
@@ -98,7 +98,7 @@
                 </b-card>
                 <b-card no-body>
                     <figure class="img-wrapper">
-                        <b-img-lazy src="https://source.unsplash.com/collection/1513994/600x400" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
+                        <b-img-lazy src="img/templates/thumbnails/tpl-08.jpg" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
                     </figure>
                     <div slot="footer">
                         <h6 class="heading">Card Title</h6>
@@ -107,7 +107,7 @@
                 </b-card>
                 <b-card no-body>
                     <figure class="img-wrapper">
-                        <b-img-lazy src="https://source.unsplash.com/collection/502925/600x400" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
+                        <b-img-lazy src="img/templates/thumbnails/tpl-09.jpg" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
                     </figure>
                     <div slot="footer">
                         <h6 class="heading">Card Title</h6>
@@ -116,7 +116,7 @@
                 </b-card>
                 <b-card no-body>
                     <figure class="img-wrapper">
-                        <b-img-lazy src="https://source.unsplash.com/collection/1891993/600x400" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
+                        <b-img-lazy src="img/templates/thumbnails/tpl-10.jpg" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
                     </figure>
                     <div slot="footer">
                         <h6 class="heading">Card Title</h6>
@@ -125,7 +125,7 @@
                 </b-card>
                 <b-card no-body>
                     <figure class="img-wrapper">
-                        <b-img-lazy src="https://source.unsplash.com/collection/993239/600x400" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
+                        <b-img-lazy src="img/templates/thumbnails/tpl-05.jpg" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
                     </figure>
                     <div slot="footer">
                         <h6 class="heading">Card Title</h6>
@@ -134,7 +134,7 @@
                 </b-card>
                 <b-card no-body>
                     <figure class="img-wrapper">
-                        <b-img-lazy src="https://source.unsplash.com/collection/1673600/600x400" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
+                        <b-img-lazy src="img/templates/thumbnails/tpl-02.jpg" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
                     </figure>
                     <div slot="footer">
                         <h6 class="heading">Card Title</h6>

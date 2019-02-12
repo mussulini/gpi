@@ -11,6 +11,7 @@
                         <template slot="button-content">
                             <span class="fa fa-desktop mr-2"></span> Desktop
                         </template>
+                        <router-link to="/preview" class="dropdown-item active"><span class="fa fa-desktop mr-2"></span> Desktop</router-link>
                         <router-link to="/preview-tablet" class="dropdown-item"><span class="fa fa-tablet mr-2"></span> Tablet</router-link>
                         <router-link to="/preview-mobile" class="dropdown-item"><span class="fa fa-mobile mr-2"></span> Mobile</router-link>
                     </b-dropdown>
