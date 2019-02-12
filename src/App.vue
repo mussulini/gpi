@@ -1,18 +1,18 @@
 <template>
 
-    <div id="app">
+  <div id="app">
 
-        <router-view name="header"></router-view>
+    <router-view name="header"></router-view>
 
-        <main>
-            <fade-transition origin="center" mode="out-in" :duration="250">
-                <router-view />
-            </fade-transition>
-        </main>
+    <main>
+      <fade-transition origin="center" mode="out-in" :duration="250">
+        <router-view />
+      </fade-transition>
+    </main>
 
-        <router-view name="footer"></router-view>
+    <router-view name="footer"></router-view>
 
-    </div>
+  </div>
 
 </template>
 

@@ -1,11 +1,14 @@
+![GPI Logo](https://github.com/MainSystemDev/GPIShowroom/blob/master/public/img/brand/logo.png)
+
 # GPI Showroom
 
 ### Installation
 
-1. `$ git clone [repo]`
-2. `$ npm install`
-3. `$ npm run dev`
-4. Preview in browser `http://localhost:8081/`
+1. `$ cd Codes`
+2. `$ git clone [repo]`
+3. `$ npm install`
+4. `$ npm run dev`
+5. Preview in browser `http://localhost:8081/`
 
 <hr>
 
@@ -21,8 +24,6 @@
     |-- assets
     |   |-- scss
     |   |   |-- style.scss
-    |   |   |-- bootstrap
-    |   |   |-- custom
     |   |-- fonts
     |       |-- font-awesome
     |       |   |-- css
@@ -47,9 +48,9 @@
     |   |-- CloseButton.vue
     |   |-- Icon.vue
     |   |-- NavbarToggleButton.vue
-    |-- layout/gpi
-    |   |-- GpiFooter.vue
-    |   |-- GpiHeader.vue
+    |-- layout
+    |   |-- AppFooter.vue
+    |   |-- AppHeader.vue
     |-- plugins
     |   |-- main.js
     |   |-- globalComponents.js
@@ -61,16 +62,12 @@
         |-- Profile.vue
         |-- Register.vue
         |-- components
-            |-- BasicElements.vue
-            |-- Carousel.vue
-            |-- CustomControls.vue
-            |-- DownloadSection.vue
-            |-- Examples.vue
-            |-- Hero.vue
-            |-- Icons.vue
-            |-- Inputs.vue
-            |-- JavascriptComponents.vue
-            |-- Navigation.vue
+            |-- Home.vue
+            |-- Cms.vue
+            |-- Showroom.vue
+            |-- Contact.vue
+            |-- Components.vue
+            |-- Preview.vue
 </code></pre>
 
 <hr>

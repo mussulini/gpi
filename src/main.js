@@ -1,8 +1,7 @@
 import Vue from "vue";
 import App from "./App.vue";
-// import router from "./router";
-import router from "./starterRouter";
-import Gpi from "./plugins/gpi";
+import router from "./router";
+import Gpi from "./plugins/main";
 
 Vue.config.productionTip = false;
 Vue.use(Gpi);

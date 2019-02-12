@@ -1,96 +1,73 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Header from "./layout/starter/StarterHeader";
-import Footer from "./layout/starter/StarterFooter";
+import AppHeader from "./layout/AppHeader";
+import AppFooter from "./layout/AppFooter";
 import Components from "./views/Components.vue";
-import Home from "./views/Home.vue";
-import Cms from "./views/Cms.vue";
-import Showroom from "./views/Showroom.vue";
-import Contact from "./views/Contact.vue";
-import Preview from "./views/Preview.vue";
-import PreviewMobile from "./views/PreviewMobile.vue";
-import PreviewTablet from "./views/PreviewTablet.vue";
+import Landing from "./views/Landing.vue";
+import Login from "./views/Login.vue";
+import Register from "./views/Register.vue";
+import Profile from "./views/Profile.vue";
 
 Vue.use(Router);
 
 export default new Router({
   linkExactActiveClass: "active",
-  routes: [
-    {
-      path: "/components",
+  routes: [{
+      path: "/",
       name: "components",
       components: {
-        header: Header,
+        header: AppHeader,
         default: Components,
-        footer: Footer
+        footer: AppFooter
       }
     },
     {
-      path: "/",
-      name: "home",
+      path: "/landing",
+      name: "landing",
       components: {
-        header: Header,
-        default: Home,
-        footer: Footer
+        header: AppHeader,
+        default: Landing,
+        footer: AppFooter
       }
     },
     {
-      path: "/cms",
-      name: "cms",
+      path: "/login",
+      name: "login",
       components: {
-        header: Header,
-        default: Cms,
-        footer: Footer
+        header: AppHeader,
+        default: Login,
+        footer: AppFooter
       }
     },
     {
-      path: "/showroom",
-      name: "showroom",
+      path: "/register",
+      name: "register",
       components: {
-        header: Header,
-        default: Showroom,
-        footer: Footer
+        header: AppHeader,
+        default: Register,
+        footer: AppFooter
       }
     },
     {
-      path: "/contact",
-      name: "contact",
+      path: "/profile",
+      name: "profile",
       components: {
-        header: Header,
-        default: Contact,
-        footer: Footer
-      }
-    },
-    {
-      path: "/preview",
-      name: "preview",
-      components: {
-        header: Header,
-        default: Preview
-      }
-    },
-    {
-      path: "/preview-tablet",
-      name: "preview-tablet",
-      components: {
-        header: Header,
-        default: PreviewTablet
-      }
-    },
-    {
-      path: "/preview-mobile",
-      name: "preview-mobile",
-      components: {
-        header: Header,
-        default: PreviewMobile
+        header: AppHeader,
+        default: Profile,
+        footer: AppFooter
       }
     }
   ],
   scrollBehavior: to => {
     if (to.hash) {
-      return { selector: to.hash };
+      return {
+        selector: to.hash
+      };
     } else {
-      return { x: 0, y: 0 };
+      return {
+        x: 0,
+        y: 0
+      };
     }
   }
 });
