@@ -1,5 +1,10 @@
 // BANNER
 // --
+.home .section-hero {
+    @include media-breakpoint-up(lg) {
+        min-height: 800px;
+    }
+}
 .section-hero {
     z-index: 1;
     position: relative;

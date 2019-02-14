@@ -87,7 +87,10 @@
         </section>
 
         <section class="section section-info">
-            <span class="header-sep gradient-primary"></span>
+
+            <div class="text-center">
+                <span class="header-sep gradient-primary"></span>
+            </div>
 
             <ul class="container infographics list-inline">
                 <li class="list-inline-item active">

@@ -1,0 +1,74 @@
+/*
+// Icons
+// -------------------------------
+// Credits:
+//  - icomoon.io
+//  - feathericons.com
+*/
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot');                                   /* IE9 Compat Modes */
+    src: url('../fonts/icomoon.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/icomoon.woff')      format('woff'),           /* Modern Browsers */
+            url('../fonts/icomoon.ttf')       format('truetype'),       /* Safari, Android, iOS */
+            url('../fonts/icomoon.svg#icomoon') format('svg');          /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
+.data-icon,
+[data-icon]:before {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    line-height: 1;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[data-icon]:before {
+    content: attr(data-icon);
+}
+
+/*
+// Usage: data-icon="(HTML Entity)"
+//    Ex: <span data-icon="&#xe004"></span>
+*/
+
+.icon-gpi:before           {content:"\e900"}
+.icon-caret-down:before    {content:"\e91b"}
+.icon-arrow-left:before    {content:"\e901"}
+.icon-arrow-right:before   {content:"\e902"}
+.icon-envelope:before      {content:"\e903"}
+.icon-mobile-rorate:before {content:"\e904"}
+.icon-grid:before          {content:"\e905"}
+.icon-grid-alt:before      {content:"\e906"}
+.icon-security:before      {content:"\e907"}
+.icon-monitor:before       {content:"\e908"}
+.icon-control:before       {content:"\e909"}
+.icon-megaphone:before     {content:"\e90a"}
+.icon-cerdit-card:before   {content:"\e90b"}
+.icon-users:before         {content:"\e90c"}
+.icon-support:before       {content:"\e90d"}
+.icon-server:before        {content:"\e90e"}
+.icon-marketing:before     {content:"\e90f"}
+.icon-data:before          {content:"\e910"}
+.icon-chat:before          {content:"\e911"}
+.icon-share:before         {content:"\e912"}
+.icon-external-link:before {content:"\e91c"}
+.icon-live-chat:before     {content:"\e913"}
+.icon-phone:before         {content:"\e914"}
+.icon-facebook:before      {content:"\e915"}
+.icon-twitter:before       {content:"\e916"}
+.icon-skype:before         {content:"\e917"}
+.icon-weixin:before        {content:"\e918"}
+.icon-weibo:before         {content:"\e919"}
+.icon-wordpress:before     {content:"\e91a"}

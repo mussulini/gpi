@@ -24,8 +24,8 @@
                     </b-form-select>
                 </b-form>
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="#" class="btn btn-neutral"><i class="fa fa-th-large"></i></a></li>
-                    <li class="nav-item"><a href="#" class="btn btn-link"><i class="fa fa-th"></i></a></li>
+                    <li class="nav-item"><a href="#" class="btn active"><i class="data-icon icon-grid"></i></a></li>
+                    <li class="nav-item"><a href="#" class="btn"><i class="data-icon icon-grid-alt"></i></a></li>
                 </ul>
             </div>
         </nav>
@@ -33,114 +33,114 @@
         <div class="container card-templates">
 
             <b-card-group deck>
-                <b-card no-body>
+                <router-link to="/preview" target="_blank" class="card">
                     <figure class="img-wrapper">
                         <b-img-lazy src="img/templates/thumbnails/tpl-01.jpg" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
                     </figure>
-                    <div slot="footer">
+                    <div class="card-footer">
                         <h6 class="heading">Card Title</h6>
-                        <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-red"></span> <span class="bg-white"></span></div>
+                        <div class="float-right color-swatches"><span class="bg-white"></span> <span class="bg-red"></span> <span class="bg-black"></span></div>
                     </div>
-                </b-card>
-                <b-card no-body>
+                </router-link>
+                <router-link to="/preview" target="_blank" class="card">
                     <figure class="img-wrapper">
                         <b-img-lazy src="img/templates/thumbnails/tpl-02.jpg" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
                     </figure>
-                    <div slot="footer">
+                    <div class="card-footer">
                         <h6 class="heading">Card Title</h6>
-                        <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-red"></span> <span class="bg-white"></span></div>
+                        <div class="float-right color-swatches"><span class="bg-green"></span> <span class="bg-red"></span> <span class="bg-purple"></span></div>
                     </div>
-                </b-card>
-                <b-card no-body>
+                </router-link>
+                <router-link to="/preview" target="_blank" class="card">
                     <figure class="img-wrapper">
                         <b-img-lazy src="img/templates/thumbnails/tpl-03.jpg" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
                     </figure>
-                    <div slot="footer">
+                    <div class="card-footer">
                         <h6 class="heading">Card Title</h6>
-                        <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-red"></span> <span class="bg-white"></span></div>
+                        <div class="float-right color-swatches"><span class="bg-blue"></span> <span class="bg-purple"></span> <span class="bg-black"></span></div>
                     </div>
-                </b-card>
-                <b-card no-body>
+                </router-link>
+                <router-link to="/preview" target="_blank" class="card">
                     <figure class="img-wrapper">
                         <b-img-lazy src="img/templates/thumbnails/tpl-04.jpg" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
                     </figure>
-                    <div slot="footer">
+                    <div class="card-footer">
                         <h6 class="heading">Card Title</h6>
-                        <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-red"></span> <span class="bg-white"></span></div>
+                        <div class="float-right color-swatches"><span class="bg-red"></span> <span class="bg-yellow"></span> <span class="bg-blue"></span></div>
                     </div>
-                </b-card>
-                <b-card no-body>
+                </router-link>
+                <router-link to="/preview" target="_blank" class="card">
                     <figure class="img-wrapper">
                         <b-img-lazy src="img/templates/thumbnails/tpl-05.jpg" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
                     </figure>
-                    <div slot="footer">
+                    <div class="card-footer">
                         <h6 class="heading">Card Title</h6>
-                        <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-red"></span> <span class="bg-white"></span></div>
+                        <div class="float-right color-swatches"><span class="bg-red"></span> <span class="bg-yellow"></span> <span class="bg-white"></span></div>
                     </div>
-                </b-card>
-                <b-card no-body>
+                </router-link>
+                <router-link to="/preview" target="_blank" class="card">
                     <figure class="img-wrapper">
                         <b-img-lazy src="img/templates/thumbnails/tpl-06.jpg" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
                     </figure>
-                    <div slot="footer">
+                    <div class="card-footer">
                         <h6 class="heading">Card Title</h6>
-                        <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-red"></span> <span class="bg-white"></span></div>
+                        <div class="float-right color-swatches"><span class="bg-yellow"></span> <span class="bg-red"></span> <span class="bg-black"></span></div>
                     </div>
-                </b-card>
-                <b-card no-body>
+                </router-link>
+                <router-link to="/preview" target="_blank" class="card">
                     <figure class="img-wrapper">
                         <b-img-lazy src="img/templates/thumbnails/tpl-07.jpg" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
                     </figure>
-                    <div slot="footer">
+                    <div class="card-footer">
                         <h6 class="heading">Card Title</h6>
-                        <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-red"></span> <span class="bg-white"></span></div>
+                        <div class="float-right color-swatches"><span class="bg-yellow"></span> <span class="bg-green"></span> <span class="bg-black"></span></div>
                     </div>
-                </b-card>
-                <b-card no-body>
+                </router-link>
+                <router-link to="/preview" target="_blank" class="card">
                     <figure class="img-wrapper">
                         <b-img-lazy src="img/templates/thumbnails/tpl-08.jpg" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
                     </figure>
-                    <div slot="footer">
+                    <div class="card-footer">
                         <h6 class="heading">Card Title</h6>
-                        <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-red"></span> <span class="bg-white"></span></div>
+                        <div class="float-right color-swatches"><span class="bg-red"></span> <span class="bg-white"></span> <span class="bg-black"></span></div>
                     </div>
-                </b-card>
-                <b-card no-body>
+                </router-link>
+                <router-link to="/preview" target="_blank" class="card">
                     <figure class="img-wrapper">
                         <b-img-lazy src="img/templates/thumbnails/tpl-09.jpg" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
                     </figure>
-                    <div slot="footer">
+                    <div class="card-footer">
                         <h6 class="heading">Card Title</h6>
-                        <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-red"></span> <span class="bg-white"></span></div>
+                        <div class="float-right color-swatches"><span class="bg-purple"></span> <span class="bg-red"></span> <span class="bg-black"></span></div>
                     </div>
-                </b-card>
-                <b-card no-body>
+                </router-link>
+                <router-link to="/preview" target="_blank" class="card">
                     <figure class="img-wrapper">
                         <b-img-lazy src="img/templates/thumbnails/tpl-10.jpg" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
                     </figure>
-                    <div slot="footer">
+                    <div class="card-footer">
                         <h6 class="heading">Card Title</h6>
-                        <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-red"></span> <span class="bg-white"></span></div>
+                        <div class="float-right color-swatches"><span class="bg-red"></span> <span class="bg-black"></span> <span class="bg-yellow"></span></div>
                     </div>
-                </b-card>
-                <b-card no-body>
+                </router-link>
+                <router-link to="/preview" target="_blank" class="card">
                     <figure class="img-wrapper">
                         <b-img-lazy src="img/templates/thumbnails/tpl-05.jpg" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
                     </figure>
-                    <div slot="footer">
+                    <div class="card-footer">
                         <h6 class="heading">Card Title</h6>
-                        <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-red"></span> <span class="bg-white"></span></div>
+                        <div class="float-right color-swatches"><span class="bg-red"></span> <span class="bg-yellow"></span> <span class="bg-white"></span></div>
                     </div>
-                </b-card>
-                <b-card no-body>
+                </router-link>
+                <router-link to="/preview" target="_blank" class="card">
                     <figure class="img-wrapper">
                         <b-img-lazy src="img/templates/thumbnails/tpl-02.jpg" class="card-img-top" center fluid-grow blank-color="#CED4DA" alt="Card Title" />
                     </figure>
-                    <div slot="footer">
+                    <div class="card-footer">
                         <h6 class="heading">Card Title</h6>
-                        <div class="float-right color-swatches"><span class="bg-black"></span> <span class="bg-red"></span> <span class="bg-white"></span></div>
+                        <div class="float-right color-swatches"><span class="bg-green"></span> <span class="bg-red"></span> <span class="bg-purple"></span></div>
                     </div>
-                </b-card>
+                </router-link>
             </b-card-group>
 
             <div class="text-center my-5">

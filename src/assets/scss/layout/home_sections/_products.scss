@@ -1,4 +1,18 @@
 #products {
+    padding: 0;
+    font-size: 0;
+    position: relative;
+    background-color: $white;
+
+    > .background {
+        svg {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    > .background-top {margin-top: -1px}
+    > .background-btm {margin-bottom: -1px}
 
     .thumbnails {
         font-size: 0;
@@ -135,9 +149,8 @@
         // &:hover {animation-play-state: paused}
     }
 
-}
-
-@keyframes slide-left {
-      0% {transform: translateX(0)}
-    100% {transform: translateX(-2500px)}
+    @keyframes slide-left {
+        0% {transform: translateX(0)}
+        100% {transform: translateX(-2500px)}
+    }
 }

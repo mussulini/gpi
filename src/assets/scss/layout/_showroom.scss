@@ -104,7 +104,10 @@
             a { margin: auto;
                 display: block;
                 padding-bottom: 0;
+                color: rgba($white,0.5);
                 font-size: $font-size-lg;
+
+                @include hover-focus {color:$white}
             }
         }
         // NAV TOOLS (THUMBNAILS)
@@ -144,11 +147,16 @@
         .navbar-nav {
             flex-direction: row;
             .btn {
-                min-width: 40px;
+                color: $body-color;
+                line-height: normal;
+                font-size: $font-size-lg;
                 padding: $btn-padding-y;
-                border-radius: $border-radius;
-                box-shadow: none; border: 0;
+                border-radius: $border-radius; border: 0;
                 @include media-breakpoint-down(md) {display:none}
+
+                &.active { color: $primary;
+                    background-color: $white;
+                }
             }
         }
 
@@ -177,24 +185,21 @@
                     max-width: calc(100% - 1.25rem);
                 }
 
-                &:before,
-                &:after {
-                    content: '';
-                    display: block;
-                    position: absolute;
-                    width: 100%; height: 100%;
-                    transition: 400ms;
+                &:before, &:after { content: '';
+                    display: block; position: absolute;
+                    width: 100%; transition: 400ms;
                     @include media-breakpoint-down(md) {display:none}
                 }
                 &:before {z-index: 1;
-                    content: '\F08E';
+                    content: '\e91c';
                     color: rgba($white,0); text-align: center;
-                    font: normal normal normal #{$h2-font-size}/12rem FontAwesome;
+                    font: normal normal normal $h2-font-size 'icomoon';
                     text-rendering: auto;
                     -webkit-font-smoothing: antialiased;
                     -moz-osx-font-smoothing: grayscale;
+                    top: 50%; transform: translateY(calc(-50% - 25px));
                 }
-                &:after {
+                &:after { height: 100%;
                     background-color: rgba($gray-900,0);
                     border-radius: $border-radius;
                 }

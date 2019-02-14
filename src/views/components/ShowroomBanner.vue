@@ -94,10 +94,10 @@
             <div class="d-inline-block">
                 <div id="customize-controls">
                     <a role="button" class="btn btn-link" data-controls="prev">
-                        <span class="fa fa-arrow-left"></span>
+                        <span class="data-icon icon-arrow-left"></span>
                     </a>
                     <a role="button" class="btn btn-link" data-controls="next">
-                        <span class="fa fa-arrow-right"></span>
+                        <span class="data-icon icon-arrow-right"></span>
                     </a>
                 </div>
 

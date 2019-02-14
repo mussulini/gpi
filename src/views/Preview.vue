@@ -4,7 +4,7 @@
         <b-navbar type="dark" variant="dark">
             <div class="container-fluid">
                 <router-link to="/showroom">
-                    <span class="fa fa-long-arrow-left mr-2"></span> Go Back
+                    <span class="data-icon icon-arrow-left mr-2"></span> Go Back
                 </router-link>
                 <div class="mx-auto">
                     <b-dropdown variant="link">
@@ -21,9 +21,10 @@
                         </template>
                         <b-dropdown-item href="#">50%</b-dropdown-item>
                         <b-dropdown-item href="#">75%</b-dropdown-item>
+                        <b-dropdown-item href="#">100%</b-dropdown-item>
                     </b-dropdown>
-                    <a href="" class="btn btn-link">
-                        <span class="fa fa-undo"></span>
+                    <a href="" class="btn btn-link disabled">
+                        <span class="data-icon icon-mobile-rorate"></span>
                     </a>
                 </div>
             </div>

@@ -9,7 +9,8 @@
 
 // Fonts
 // @import "../fonts/nucleo/css/nucleo.css";
-@import "../fonts/font-awesome/css/font-awesome.css";
+// @import "../fonts/font-awesome/css/font-awesome.css";
+@import "../fonts/icomoon/css/icomoon.css";
 
 
 // BASE
@@ -53,8 +54,7 @@
 @import "components/navbar";
 @import "components/pagination";
 @import "components/popover";
-@import "components/nucleo-icons";
-@import "components/products";
+// @import "components/nucleo-icons";
 
 
 // Layout
@@ -63,7 +63,6 @@
 @import "layout/grid";
 @import "layout/header";
 @import "layout/header-fixed";
-@import "layout/hero";
 @import "layout/footer";
 @import "layout/section";
 // PAGES

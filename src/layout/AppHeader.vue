@@ -40,7 +40,7 @@
           <a slot="title" href="#" class="nav-link" data-toggle="dropdown" role="button">
             <span class="img-flag flag-en"></span>
             <span class="nav-link-inner--text">English</span>
-            <span class="fa fa-chevron-down ml-2"></span>
+            <span class="data-icon icon-caret-down ml-2"></span>
           </a>
           <router-link to="/cn" class="dropdown-item">
             <span class="img-flag flag-cn"></span>
