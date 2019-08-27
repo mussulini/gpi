@@ -7,9 +7,10 @@
 2. Open Terminal
 3. Go to your prefered directory i.e. `$ cd Codes`
 4. `$ git clone [repo]` ex. `$ git clone git@github.com:[X-USER]/GPIShowroom.git`
-5. `$ npm install`
-6. `$ npm run dev`
-7. Preview in browser `http://localhost:8081/`
+5. `$ gpi`
+6. `$ npm install`
+7. `$ npm run dev`
+8. Preview in browser `http://localhost:8081/`
 
 <hr>
 
