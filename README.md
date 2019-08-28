@@ -1,4 +1,4 @@
-![GPI Logo](https://github.com/mussulini/gpi/blob/master/public/img/brand/logo.png)
+![GPI Logo](https://raw.githubusercontent.com/mussulini/gpi/master/public/img/brand/logo.png)
 
 # GPI Showroom
 
