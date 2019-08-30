@@ -1,16 +1,19 @@
-![GPI Logo](https://raw.githubusercontent.com/mussulini/gpi/master/public/img/brand/logo.png)
+<p align="center">
+	<img src="https://raw.githubusercontent.com/mussulini/gpi/master/public/img/brand/logo.png" width="200">
+</p>
 
-# GPI Showroom
+##  Developer Machine Setup
 
 ### Installation
-1. **Fork this REPO** and go to your page to copy and Clone with SSH (or HTTPS) URL
-2. Open Terminal
-3. Go to your prefered directory i.e. `$ cd Codes`
-4. `$ git clone [repo]` ex. `$ git clone git@github.com:[X-USER]/GPIShowroom.git`
-5. `$ gpi`
-6. `$ npm install`
-7. `$ npm run dev`
-8. Preview in browser `http://localhost:8081/`
+1. **Fork this REPO**
+2. Go to your page to clone with SSH or HTTPS to your local machine or download the whole repo.
+3. Open your Terminal or iTerm
+4. Go to your prefered directory i.e. `$ cd Codes`
+5. `$ git clone [repo]` ex. `$ git clone git@github.com:[X-USER]/gpi.git`
+6. `$ gpi`
+7. `$ npm install`
+8. `$ npm run dev`
+9. Preview in browser `http://localhost:8081/`
 
 <hr>
 
@@ -19,7 +22,7 @@
 <p>Base structure, you’ll find the following directories and files:</p>
 
 <pre class="highlight">
-<code>|-- GPIShowroom/
+<code>|-- gpi/
     |-- App.vue
     |-- main.js
     |-- router.js
@@ -74,8 +77,12 @@
 
 <hr>
 
+### How to setup local domain
+* Add local domain to your etc/hosts, i.e.`[web.gpi.local]`
+* Setup server on nginx config and point the root directory to `/dist` *(production build)*
+* Restart nginx `sudo nginx -s reload`
+
 ### Production Build
 
 1. `$ npm run build`
-2. Set local domain on hosts i.e. `http://web.gpi.local`
-2. Setup server on nginx config and point the root directory to `/dist`
+2. Copy this on any browser `http://web.gpi.local`
